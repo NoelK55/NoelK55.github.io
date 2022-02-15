@@ -632,13 +632,13 @@ p.arrival-review span {margin-right: 15px;}
     bottom:0px;
 }
 .single-new-arrival  h4 a{
-    color:#5f5b57;
+    color:#da8531;
     font-size:16px;
     font-weight:500;
     margin:26px 0 12px;
 }
 .arrival-product-price{
-    color:#5f5b57;
+    color:#cf8439;
     font-size: 16px;
     font-weight: 400;
 }
@@ -669,10 +669,10 @@ p.arrival-review span {margin-right: 15px;}
     left: 0;
     height: 100%;
     width: 33.4%;
-    background: rgba(51,59,62,.95);
+    background: rgba(236, 163, 78, 0.95);
 }
 .sofa-collection:after {
-    background: rgba(106,119,129,.3);
+    background: rgba(240, 181, 55, 0.3);
     left: auto;
     right: 0;
     width: 66.6%;
