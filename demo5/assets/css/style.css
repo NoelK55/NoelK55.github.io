@@ -512,7 +512,7 @@ ul.cart-list > li.total {
     line-height: 40px;
     color: #d18233;
     background: transparent;
-    border: 1px solid #5f5b57;
+    border: 1px solid #57595f;
     font-size: 14px;
     margin-top: 23px;
     -webkit-transition: 0.3s linear; 
@@ -522,7 +522,7 @@ ul.cart-list > li.total {
     transition: 0.3s linear;
 }
 .single-populer-products:hover .btn-cart.welcome-add-cart.populer-products-btn {
-    color: #fff;
+    color: rgb(167, 145, 76);
     background: #5f5b57;
     border: 1px solid #5f5b57;
 }
