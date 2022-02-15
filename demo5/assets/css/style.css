@@ -69,7 +69,7 @@ p {
 	font-size:16px;
     line-height: 1.8;
 }
-img{border:none;max-width:100%; height:auto;}
+img{border:5px;max-width:100%; height:auto;}
 ul{
 	padding: 0;
     margin: 0 auto;
