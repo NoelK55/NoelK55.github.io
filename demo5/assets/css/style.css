@@ -514,7 +514,7 @@ ul.cart-list > li.total {
     line-height: 40px;
     color: #d18233;
     background: transparent;
-    border: 8px solid #ff0000;
+    border: 6px solid #ff0000;
     font-size: 14px;
     margin-top: 23px;
     -webkit-transition: 0.3s linear; 
