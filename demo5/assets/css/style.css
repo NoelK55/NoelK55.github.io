@@ -334,6 +334,7 @@ ul.cart-list > li.total {
     color: #616060;
     font-weight: 400;
     margin: 20px 0 22px;
+    font-family: 'Cutive Mono', monospace;
 }
 .welcome-hero-txt p{margin: 35px 0 20px;}
 .welcome-hero-txt .packages-price p {
