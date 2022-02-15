@@ -458,80 +458,6 @@ ul.cart-list > li.total {
 }
 /* .carousel-fade */
 
-/*-------------------------------------
-        4. Populer-post
---------------------------------------*/
-.populer-products{padding:100px 0 0;}
-.single-populer-products{
-    position: relative;
-    min-height:280px;
-    background: #f8f9fc;
-    text-align: center;
-    overflow:hidden;
-}
-.single-populer-product-img.mt40{margin-top: 40px;}
-.single-inner-populer-products{margin-top: 40px;padding: 0 45px 0 30px;text-align: left;}
-
-.single-populer-products h2 a {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 500;
-    color: #eba258;
-    margin: 25px 0 22px;
-    -webkit-transition: 0.3s linear; 
-    -moz-transition: 0.3s linear; 
-    -ms-transition: 0.3s linear; 
-    -o-transition: 0.3s linear; 
-    transition: 0.3s linear;
-}
-.single-populer-products:hover h2 a{color: #e99c2e;}
-.single-populer-products-para {
-    height: 50px;
-    overflow: hidden;
-    display: inline-block;
-}
-.single-populer-products-para p {
-    font-size: 14px;
-    padding: 0px 20px;
-    text-transform: initial;
-}
-.single-inner-populer-product-txt {margin-top: 8px;}
-.single-populer-products .single-inner-populer-product-txt h2 a{margin: 0;}
-.single-inner-populer-product-txt span{text-transform:lowercase;}
-.single-inner-populer-product-txt p {
-    font-size: 14px;
-    margin: 18px 0 13px;
-}
-.populer-products-price h4 {
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: initial;
-}
-.populer-products-price h4 span{color: #e99c2e;}
-.btn-cart.welcome-add-cart.populer-products-btn {
-    width: 118px;
-    height: 40px;
-    line-height: 40px;
-    color: #d18233;
-    background: transparent;
-    border: 1px solid #57595f;
-    font-size: 14px;
-    margin-top: 23px;
-    -webkit-transition: 0.3s linear; 
-    -moz-transition: 0.3s linear; 
-    -ms-transition: 0.3s linear; 
-    -o-transition: 0.3s linear; 
-    transition: 0.3s linear;
-}
-.single-populer-products:hover .btn-cart.welcome-add-cart.populer-products-btn {
-    color: rgb(167, 145, 76);
-    background: #5f5b57;
-    border: 1px solid #5f5b57;
-}
-
-/*-------------------------------------
-        5. New-arrivals 
---------------------------------------*/
 .new-arrivals {padding:85px 0 70px;}
 .new-arrivals-content{margin-top: 80px;}
 
@@ -645,6 +571,80 @@ p.arrival-review span {margin-right: 15px;}
     font-weight: 400;
 }
 .single-new-arrival:hover h4 a{color:#e99c2e;}
+/*-------------------------------------
+        4. Populer-post
+--------------------------------------*/
+.populer-products{padding:100px 0 0;}
+.single-populer-products{
+    position: relative;
+    min-height:280px;
+    background: #f8f9fc;
+    text-align: center;
+    overflow:hidden;
+}
+.single-populer-product-img.mt40{margin-top: 40px;}
+.single-inner-populer-products{margin-top: 40px;padding: 0 45px 0 30px;text-align: left;}
+
+.single-populer-products h2 a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #eba258;
+    margin: 25px 0 22px;
+    -webkit-transition: 0.3s linear; 
+    -moz-transition: 0.3s linear; 
+    -ms-transition: 0.3s linear; 
+    -o-transition: 0.3s linear; 
+    transition: 0.3s linear;
+}
+.single-populer-products:hover h2 a{color: #e99c2e;}
+.single-populer-products-para {
+    height: 50px;
+    overflow: hidden;
+    display: inline-block;
+}
+.single-populer-products-para p {
+    font-size: 14px;
+    padding: 0px 20px;
+    text-transform: initial;
+}
+.single-inner-populer-product-txt {margin-top: 8px;}
+.single-populer-products .single-inner-populer-product-txt h2 a{margin: 0;}
+.single-inner-populer-product-txt span{text-transform:lowercase;}
+.single-inner-populer-product-txt p {
+    font-size: 14px;
+    margin: 18px 0 13px;
+}
+.populer-products-price h4 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: initial;
+}
+.populer-products-price h4 span{color: #e99c2e;}
+.btn-cart.welcome-add-cart.populer-products-btn {
+    width: 118px;
+    height: 40px;
+    line-height: 40px;
+    color: #d18233;
+    background: transparent;
+    border: 1px solid #57595f;
+    font-size: 14px;
+    margin-top: 23px;
+    -webkit-transition: 0.3s linear; 
+    -moz-transition: 0.3s linear; 
+    -ms-transition: 0.3s linear; 
+    -o-transition: 0.3s linear; 
+    transition: 0.3s linear;
+}
+.single-populer-products:hover .btn-cart.welcome-add-cart.populer-products-btn {
+    color: rgb(167, 145, 76);
+    background: #5f5b57;
+    border: 1px solid #5f5b57;
+}
+
+/*-------------------------------------
+        5. New-arrivals 
+--------------------------------------*/
 
 /*-------------------------------------
         6. Sofa-coolection
