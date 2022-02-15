@@ -27,8 +27,8 @@ font-family: 'Roboto', sans-serif;
 		1.General css (Reset code)
 --------------------------------------*/
 *{
-    padding: 10;
-    margin: auto;
+    padding: 0;
+    margin: 0;
 }
 
 *{
@@ -579,6 +579,7 @@ ul.cart-list > li.total {
     -ms-transition: .3s linear;
     -o-transition: .3s linear;
     transition: .3s linear;
+    float: left;
 }
 .single-new-arrival-bg:hover .single-new-arrival-bg-overlay{
     -webkit-transform:scale(1);
