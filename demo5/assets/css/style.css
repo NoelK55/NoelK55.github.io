@@ -537,7 +537,7 @@ ul.cart-list > li.total {
 
 .single-new-arrival{margin-bottom: 50px;text-align: left;}
 .single-new-arrival-bg {
-    position: relative;
+    position: left;
     min-height: 310px;
     background: #3f68d8;
     display: flex;
