@@ -721,11 +721,11 @@ span.spacial-feature-icon i {color:  #a9a9a9;}
 span.feature-review {margin-left: 10px;}
 .single-feature-txt p {font-size: 14px;}
 .single-feature-txt h3 a ,.single-blog-txt h2 a{
-    color: #5f5b57;
+    color: #c28549;
     margin: 10px 0px 15px;
 }
 .single-feature-txt h5 {
-    color:  #5f5b57;
+    color:  #cc9053;
     font-weight:  400;
 }
 /*.single-feature-txt */
@@ -796,7 +796,7 @@ span.feature-review {margin-left: 10px;}
 }
 .single-blog-txt h2 a{text-transform: initial;margin: 0 0 15px 0;}
 .single-blog-txt h3,.single-blog-txt h3 a {
-    color: #e29e59;
+    color: #c4bcb5;
     font-size: 14px;
     font-weight: 400;
 }
