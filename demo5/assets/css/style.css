@@ -564,10 +564,10 @@ ul.cart-list > li.total {
 .single-new-arrival-bg-overlay{
     position: absolute;
     content: "";
-    top: 30;
+    top: 0;
     left: 0;
-    height: 70%;
-    width: 70%;
+    height: 100%;
+    width: 100%;
     background: rgba(106,119,129,.1);
     -webkit-transform:scale(0);
     -moz-transform:scale(0);
