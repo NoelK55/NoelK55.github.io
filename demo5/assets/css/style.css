@@ -564,7 +564,7 @@ ul.cart-list > li.total {
 .single-new-arrival-bg-overlay{
     position: absolute;
     content: "";
-    top: 0;
+    top: 30;
     left: 0;
     height: 70%;
     width: 70%;
@@ -579,7 +579,6 @@ ul.cart-list > li.total {
     -ms-transition: .3s linear;
     -o-transition: .3s linear;
     transition: .3s linear;
-    float: left;
 }
 .single-new-arrival-bg:hover .single-new-arrival-bg-overlay{
     -webkit-transform:scale(1);
