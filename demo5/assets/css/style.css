@@ -541,8 +541,8 @@ ul.cart-list > li.total {
     min-height: 310px;
     background: #3f68d8;
     display: flex;
-    align-items: left;
-    justify-content:left;
+    align-items: center;
+    justify-content:center;
     overflow:hidden;
 }
 .single-new-arrival-bg img{
