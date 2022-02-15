@@ -813,7 +813,7 @@ span.feature-review {margin-left: 10px;}
         9. Clients
 --------------------------------------*/
 .clients {
-    background: #f8f9fd;
+    background: #7690f8;
     display: flex;
     align-items: center;
     height: 220px;
@@ -826,9 +826,9 @@ span.feature-review {margin-left: 10px;}
 
 .hm-footer-widget{margin-bottom: 30px;}
 .hm-foot-title h4 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 45px;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 35px;
 }
 .hm-foot-menu ul li a {
     color: #a09e9c;
