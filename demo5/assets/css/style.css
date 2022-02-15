@@ -101,6 +101,7 @@ html,body{height: 100%;}
 .section-header h2{
     font-size: 30px;
     font-weight: 500;
+    font-family: 'Xanh Mono', monospace;
 }
 .section-header h2 span{text-transform: lowercase;}
 /* section-header */
