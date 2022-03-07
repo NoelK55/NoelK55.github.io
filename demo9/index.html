@@ -3,7 +3,7 @@
 
 <head>
   <!-- Basic -->
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Transportz</title>
+  <title>Demo9</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -28,9 +28,19 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <script type="text/javascript" language="javascript" src="kirjautuminen.js"></script>
 </head>
 
 <body>
+  <p id="tervetuloa_teksti">Tervetuloa</p>
+  <form id ="kirjautumis_lomake">
+      <input id="nimi" type="text" placeholder="Syötä nimesi" value=""/>
+      <input id="kirjaudu_nappi" type="submit" value="Kirjaudu sisään" onClick="kirjaudu()" />
+  </form>
+  <form id ="kirjaudu_ulos_lomake">
+      <input id="kirjaudu_ulos_nappi" type="submit" value="Kirjaudu ulos" onClick="kirjauduulos()" />
+  </form>
   <div class="hero_area">
     <!-- header section strats -->
     <section class="header_section">
