@@ -6,4 +6,8 @@ if(kirjautunut === 'kylla')
 {
     document.getElementById('tervetuloa_teksti').textContent += ' Noel KKTI21A';
 }
+
+function kirjaudu(){
+    localStorage.setItem("nimi", "noel");
+}
 }
