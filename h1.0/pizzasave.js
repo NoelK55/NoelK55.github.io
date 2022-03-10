@@ -50,21 +50,42 @@ function pepperoni()
 {
     localStorage.setItem("pepperonipizza", "kylla");
 }
+function peruutapepperoni()
+{
+    localStorage.setItem("pepperonipizza", "null");
+}
+
 function mexicana()
 {
     localStorage.setItem("mexicanapizza", "kylla");
+}
+function peruutamexicana()
+{
+    localStorage.setItem("mexicanapizza", "null");
 }
 function americana()
 {   
     localStorage.setItem("americanapizza", "kylla");
 }
+function peruutaamericana()
+{
+    localStorage.setItem("americanapizza", "null");
+}
 function kokin()
 {
     localStorage.setItem("kokinpizza", "kylla");
 }
+function peruutakokin()
+{
+    localStorage.setItem("kokinpizza", "null");
+}
 function talontapaan()
 {
     localStorage.setItem("talonpizza", "kylla");
+}
+function peruutatalon()
+{
+    localStorage.setItem("talonpizza", "null");
 }
 function valmistilaus()
 {
