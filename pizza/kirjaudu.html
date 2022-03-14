@@ -3,33 +3,52 @@
     <head>
         <meta charset="UTF-8">
         <title>Kirjaudu</title>
-        <script type="text/javascript" language="javascript" src="kirjaudu.js"></script>
+        <script src="js/rekisterointi.js"></script>
     </head>
 
     <body>
-        <section class="kirjautuminen">
-            <form id="kirjaudu_lista">
-                <laberl for="kirjaudu_nappi">Kirjaudu sisään</label>
-                <input id="kirjaudu_nappi" type="submit" value="Tästä" onClick="kirjaudu()">
-                <span>   tai   </span>
-                <laberl for="rekisteroi_nappi">Rekisteröidy</label>
-                <input id="rekisteroi_nappi" type="submit" value="Tästä" onClick="rekisteroi()">
+        <div class="kirrek_napit">
+            <form id="kirrek_lista">
+                <input id="kirjaudu_nappi" type="submit" value="Kirjaudu" onClick="kirjaudu()">
                 <br>
+                <input id="rekisteroi_nappi" type="submit" value="Rekisteröidy" onClick="rekisteoi()">
             </form>
-        </section>
-
-        <section class="rekisterointi">
+        </div>
+        <div class="rekisterointi">
             <form id="rekisterointi_lista">
-                <label for="email">Sähköposti:</label>
-                <input id="email" type="email" name="email" required>
+                <label for="email">Sähköposti: </label>
+                <input id="email" type="email" required>
                 <br>
-                <label for="kayttajanimi">Käyttäjänimi</label>
-                <input id="kayttajanimi" type="text" name="kayttajanimi" required minlength="5" maxlength="10">
+                <label for="kayttajanimi">Käyttäjänimi: </label>
+                <input id="kayttajanimi" type="text" required maxlength="10" minlength="4">
                 <br>
-                <label for="salasana">Salasana</label>
-                <input id="salasana" type="password" name="salasana" required minlength="5" maxlength="12">
+                <label for="password">Salasana: </label>
+                <input id="password" type="password" required minlength="5" maxlength="12">
+                <br>
+                <input id="rekisteroi" type="submit" value="Rekisteröidy" onClick="rekisteroidytty()">
             </form>
-        </section>
+        </div>
+        <div class="kirjaudu">
+            <form id="kirjautumis_lista">
+                <label for="kayttajanimien">Käyttäjänimi: </label>
+                <input id="kayttajanimien" type="text" required maxlength="10" minlength="4">
+                <br>
+                <label for="passwords">Salasana: </label>
+                <input id="passwords" type="password" required minlength="5" maxlength="12">
+                <br>
+                <input id="kirjaudu" type="submit" value="Kirjaudu" onClick="kirjaudutaan()">
+            </form>
+        </div>
+        <div class="peruutarec">
+            <form id="peruutarek_lista">
+                <input id="peruutrekisterointi" type="submit" value="Peruuta" onClick="peruutarek()">
+            </form>
+        </div>
+        <div class="kotisivu_paluu">
+            <form id="paluukoti_lista">
+                <a class="koti-link" href="index.html">Palaa kotisivulle</a>
+            </form>
+        </div>
     </body>
 
 </html>

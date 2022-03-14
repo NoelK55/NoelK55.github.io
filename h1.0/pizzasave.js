@@ -41,10 +41,13 @@ function alku()
     else {
         document.getElementById("talonmenu_lista").style.display = "none";
     }
-
     
 }
 
+function testi()
+{
+    localStorage.setItem("testi", document.getElementById("nimi").value);
+}
 
 function pepperoni()
 {
@@ -100,3 +103,4 @@ function peruutatilaus()
 {
     localStorage.clear();
 }
+
