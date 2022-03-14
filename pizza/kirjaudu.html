@@ -36,7 +36,7 @@
                 <label for="passwords">Salasana: </label>
                 <input id="passwords" type="password" required minlength="5" maxlength="12">
                 <br>
-                <input id="kirjaudu" type="submit" value="Kirjaudu" onClick="kirjaudutaan()">
+                <input id="kirjaudu" type="submit" value="Kirjaudu">
             </form>
         </div>
         <div class="peruutarec">
@@ -44,9 +44,19 @@
                 <input id="peruutrekisterointi" type="submit" value="Peruuta" onClick="peruutarek()">
             </form>
         </div>
+        <div class="peruutakir">
+            <form id="peruutakir_lista">
+                <input id="peruutakirjau" type="submit" value="Peruuta" onClick="peruutakir()">
+            </form>
+        </div>
         <div class="kotisivu_paluu">
             <form id="paluukoti_lista">
                 <a class="koti-link" href="index.html">Palaa kotisivulle</a>
+            </form>
+        </div>
+        <div class="kirjautuminenon">
+            <form id="kirjautuminenon_lista">
+                <p>Onnistui</p>
             </form>
         </div>
     </body>

@@ -1,35 +1,33 @@
 document.addEventListener("DOMContentLoaded", alku);
 
 function alku()
-{
-    if(localStorage.getItem("kirjaudutaan")==="kylla" || localStorage.getItem("rekisteroidaan")==="kylla" || localStorage.getItem("kirjauduttu")==="kylla")
-    {
-        document.getElementById("kirrek_lista").style.display = "none";
-        document.getElementById("peruutarek_lista")
-    }
-    else 
-    {
-        document.getElementById("kirrek_lista")
-    }
-    
+{ 
     if(localStorage.getItem("kirjaudutaan")==="kylla")
     {
         document.getElementById("kirrek_lista").style.display = "none";
+        document.getElementById("kirjautumis_lista");
+        document.getElementById("peruutakir_lista");
     }
     else
     {
         document.getElementById("kirrek_lista")
+        document.getElementById("kirjautumis_lista").style.display = "none";
+        document.getElementById("peruutakir_lista").style.display = "none";
     }
 
     if(localStorage.getItem("rekisteroidaan")==="kylla")
     {
         document.getElementById("rekisterointi_lista");
+        document.getElementById("kirrek_lista").style.display = "none";
+        document.getElementById("peruutarek_lista")
     }
     else
     {
         document.getElementById("rekisterointi_lista").style.display = "none";
         document.getElementById("peruutarek_lista").style.display = "none";
     }
+
+    
 }
 
 function kirjaudu()
@@ -58,10 +56,7 @@ function peruutarek()
     localStorage.setItem("rekisteroidaan", "");
 }
 
-function kirjaudutaan()
+function peruutakir()
 {
-    if(localStorage.getItem("rekkayttajanimi" === document.getElementById("kayttajanimien").value) && localStorage.getItem("reksalasana" === document.getElementById("passwords").value))
-    {
-        <p>VITTU VIHDOI!!!!</p>
-    }
+    localStorage.setItem("kirjaudutaan", "");
 }
