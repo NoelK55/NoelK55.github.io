@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fi" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kirjaudu</title>
+        <script type="text/javascript" language="javascript" src="kirjaudu.js"></script>
+    </head>
+
+    <body>
+        <section class="kirjautuminen">
+            <form id="kirjaudu_lista">
+                <laberl for="kirjaudu_nappi">Kirjaudu sisään</label>
+                <input id="kirjaudu_nappi" type="submit" value="Tästä" onClick="kirjaudu()">
+                <span>   tai   </span>
+                <laberl for="rekisteroi_nappi">Rekisteröidy</label>
+                <input id="rekisteroi_nappi" type="submit" value="Tästä" onClick="rekisteroi()">
+                <br>
+            </form>
+        </section>
+
+        <section class="rekisterointi">
+            <form id="rekisterointi_lista">
+                <label for="email">Sähköposti:</label>
+                <input id="email" type="email" name="email" required>
+                <br>
+                <label for="kayttajanimi">Käyttäjänimi</label>
+                <input id="kayttajanimi" type="text" name="kayttajanimi" required minlength="5" maxlength="10">
+                <br>
+                <label for="salasana">Salasana</label>
+                <input id="salasana" type="password" name="salasana" required minlength="5" maxlength="12">
+            </form>
+        </section>
+    </body>
+
+</html>
