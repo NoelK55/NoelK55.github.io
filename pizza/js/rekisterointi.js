@@ -42,18 +42,18 @@ function alku()
     if(localStorage.getItem("kirjauduttu")==="kylla")
     {
         document.getElementById("kirjautuminenon_lista");
+        document.getElementById("kirjaa_ulos");
         document.getElementById("rekisterointi_lista").style.display = "none";
         document.getElementById("peruutarek_lista").style.display = "none";
         document.getElementById("kirrek_lista").style.display = "none";
         document.getElementById("kirjautumis_lista").style.display = "none";
         document.getElementById("peruutakir_lista").style.display = "none";
         document.getElementById("paluukoti_lista").style.display = "none";
-        document.getElementById("hide_lista").style.display = "none";
     }
     else
     {
         document.getElementById("kirjautuminenon_lista").style.display = "none";
-        document.getElementById("hide_lista");
+        document.getElementById("kirjaa_ulos").style.display = "none";
     }
 
 }
@@ -100,5 +100,11 @@ function varmis()
     localStorage.setItem("kirnimi", "");
     localStorage.setItem("kirsalasana","");
 }
+
+function kirjaaulos()
+{
+    localStorage.setItem("kirjauduttu", "");
+}
+
 
 
