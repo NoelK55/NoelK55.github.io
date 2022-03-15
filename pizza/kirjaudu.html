@@ -16,9 +16,6 @@
         </div>
         <div class="rekisterointi">
             <form id="rekisterointi_lista">
-                <label for="email">Sähköposti: </label>
-                <input id="email" type="email" required>
-                <br>
                 <label for="kayttajanimi">Käyttäjänimi: </label>
                 <input id="kayttajanimi" type="text" required maxlength="10" minlength="4">
                 <br>
@@ -36,7 +33,7 @@
                 <label for="passwords">Salasana: </label>
                 <input id="passwords" type="password" required minlength="5" maxlength="12">
                 <br>
-                <input id="kirjaudu" type="submit" value="Kirjaudu">
+                <input id="kirjaudu" type="submit" value="Kirjaudu" onClick="kirjaudutan()">
             </form>
         </div>
         <div class="peruutarec">
@@ -56,7 +53,8 @@
         </div>
         <div class="kirjautuminenon">
             <form id="kirjautuminenon_lista">
-                <p>Onnistui</p>
+                <p>kirjautuminen onnistui palaa tästä kotisivulle</p>
+                <a class="koti-link" href="index.html">Palaa kotisivulle</a>
             </form>
         </div>
     </body>
