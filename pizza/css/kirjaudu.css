@@ -8,11 +8,12 @@ body {
 
 p {
     font-size: large;
+    
 
 }
 
 .koti-link {
-    font: bold 15px Arial;
+    font: bold 13px Arial;
     text-decoration: none;
     background-color: #EEEEEE;
     color: #333333;
