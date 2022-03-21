@@ -77,7 +77,7 @@
 							<h1 class="m-b-20"><strong>Tervetuloa <br> Vantaan Herkku Pizzeriaan</strong></h1>
 							<p class="m-b-40">Once you go Vantaan Herkku Pizza  <br> 
 							You never go back.</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Rekisteröidy</a></p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#kelaus">Menumme</a></p>
 						</div>
 					</div>
 				</div>
@@ -90,7 +90,7 @@
 							<h1 class="m-b-20"><strong>Tervetuloa <br> Vantaan Herkku Pizzeriaan</strong></h1>
 							<p class="m-b-40">Herkku hetket odottavat sinua  <br> 
 							vain muutaman clickkauksen päässä</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Rekisteröidy</a></p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="tilaus.html">Tilaa</a></p>
 						</div>
 					</div>
 				</div>
@@ -103,7 +103,7 @@
 							<h1 class="m-b-20"><strong>Tervetuloa <br> Vantaan Herkku Pizzeriaan</strong></h1>
 							<p class="m-b-40">Tie sydämmeen käy pizzan kautta  <br> 
 							vaikka yksi slaissi kerrallaan.</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Rekisteröidy</a></p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#lisaakelaus">Lisätiedot</a></p>
 						</div>
 					</div>
 				</div>
@@ -167,10 +167,11 @@
 				<div class="col-lg-12">
 					<div class="special-menu text-center">
 						<div class="button-group filter-button-group">
-							<button class="active" data-filter="*">Kaikki</button>
-							<button data-filter=".drinks">Juomat</button>
-							<button data-filter=".lunch">Pienet pizzat</button>
-							<button data-filter=".dinner">Isot pizzat</button>
+							<div id="kelaus">
+								<button class="active" data-filter="*">Kaikki</button>
+								<button data-filter=".drinks">Juomat</button>
+								<button data-filter=".dinner">Pizzat</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -210,78 +211,67 @@
 					</div>
 				</div>
 				
-				<div class="col-lg-4 col-md-6 special-grid lunch">
+				<div class="col-lg-4 col-md-6 special-grid dinner">
 					<div class="gallery-single fix">
-						<img src="images/pepperoni.jpg" class="img-fluid" alt="Image">
+						<img src="images/pepperonipizza.png" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Pieni pepperoni</h4>
-							<p>Tomaatti kastike, juusto ja pepperoni</p>
-							<h5> 8,30€</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid lunch">
-					<div class="gallery-single fix">
-						<img src="images/meatlove.jpg" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Lasten lihapulla pizza</h4>
-							<p>Tomaatti kastike, juusto ja lihapullat.</p>
-							<h5> 8,30€</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid lunch">
-					<div class="gallery-single fix">
-						<img src="images/minipizza.jpg" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Lasten minipizzat</h4>
-							<p>Tomaattikastike, juusto ja pepperoni.</p>
-							<h5> 8,30€</h5>
+							<h4>Pepperoni Pizza</h4>
+							<p>Tomaattikastiketta, juustoa ja pepperonia</p>
+							<h5> 9,80€</h5>
 						</div>
 					</div>
 				</div>
 				
 				<div class="col-lg-4 col-md-6 special-grid dinner">
 					<div class="gallery-single fix">
-						<img src="images/liha.jpg" class="img-fluid" alt="Image">
+						<img src="images/meatlovepizza.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Lihan ystävät</h4>
-							<p>Tomaattikastike, juusto, paprika, pepperoni, salami ja lihapullat.</p>
+							<h4>Meatlove pizza</h4>
+							<p>Tomaattikastiketta, juustoa, tomaattia, pekonia, jauhelihaa, kebablihaa, parmesaanijuustoa</p>
 							<h5> 11,80€</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 special-grid dinner">
+					<div class="gallery-single fix">
+						<img src="images/kebabpizza.jfif" class="img-fluid" alt="Image">
+						<div class="why-text">
+							<h4>Kebab pizza</h4>
+							<p>Tomaattikastiketta, juustoa, punasipulia, kebablihaa, jalopenoja, talonkastiketta</p>
+							<h5> 10,99€</h5>
 						</div>
 					</div>
 				</div>
 				
 				<div class="col-lg-4 col-md-6 special-grid dinner">
 					<div class="gallery-single fix">
-						<img src="images/kanakebab.jpg" class="img-fluid" alt="Image">
+						<img src="images/kanapekonipizza.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Kanakebab pizza</h4>
-							<p>Tomaattikastike, juusto, Kanakebab ja rukola.</p>
-							<h5> 11,80€</h5>
+							<h4>Kanapekoni pizza</h4>
+							<p>Tomaattikastiketta, juustoa, punasipulia, kanaa, pekonia ja BBQ-kastiketta</p>
+							<h5> 11,20€</h5>
 						</div>
 					</div>
 				</div>
+
 				<div class="col-lg-4 col-md-6 special-grid dinner">
 					<div class="gallery-single fix">
 						<img src="images/isokinkku.jpg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Iso kinkku pizza</h4>
-							<p>Tomaattikastike, juusto ja kinkku.</p>
-							<h5> 11,80€</h5>
+							<h4>Kinkku pizza</h4>
+							<p>Tomaattikastiketta, juustoa, kinkkua</p>
+							<h5> 10,50€</h5>
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="col-lg-4 col-md-6 special-grid dinner">
 					<div class="gallery-single fix">
-						<img src="images/omaval.jpg" class="img-fluid" alt="Image">
+						<img src="images/mergeritapizza.jpeg" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Oma valinta</h4>
-							<p>Valitse neljä omaa täytettä.</p>
-							<h5> 11,80€</h5>
+							<h4>Margarita pizza</h4>
+							<p>Tomaattikastiketta, juustoa, tuoretta basilikaa</p>
+							<h5> 9,20€</h5>
 						</div>
 					</div>
 				</div>
@@ -332,6 +322,7 @@
 	<footer class="footer-area bg-f">
 		<div class="container">
 			<div class="row">
+				<div id="lisaakelaus"></div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Meistä lisää</h3>
 					<p>Pizza on yksi maailman suosituimmista ruokamuodoista ja monet meistä ei edes tiedä miltä kunnon pizzan kuuluisi maistua. Me haluamme muuttaa maailman kuvaa pizzoista ja parantaa juuri sinun herkku hetkeäsi!</p>

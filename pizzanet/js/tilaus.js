@@ -2,130 +2,128 @@ document.addEventListener("DOMContentLoaded", aloitus);
 
 function aloitus()
 {
-    if(localStorage.getItem("pizza1") >= 1)
+    if(localStorage.getItem("pizza1")==="kylla")
     {
-        document.getElementById("poistapizza1_lista");
-
+        document.getElementById("pizzat1_lista");
+    } 
+    else{
+        document.getElementById("pizzat1_lista").style.display = "none";
+    }
+    if(localStorage.getItem("pizza2")==="kylla")
+    {
+        document.getElementById("pizzat2_lista");
+    } 
+    else{
+        document.getElementById("pizzat2_lista").style.display = "none";
+    }
+    if(localStorage.getItem("pizza3")==="kylla")
+    {
+        document.getElementById("pizzat3_lista");
+    } 
+    else{
+        document.getElementById("pizzat3_lista").style.display = "none";
+    }
+    if(localStorage.getItem("pizza4")==="kylla")
+    {
+        document.getElementById("pizzat4_lista");
+    } 
+    else{
+        document.getElementById("pizzat4_lista").style.display = "none";
+    }
+    if(localStorage.getItem("pizza5")==="kylla")
+    {
+        document.getElementById("pizzat5_lista");
+    } 
+    else{
+        document.getElementById("pizzat5_lista").style.display = "none";
+    }
+    if(localStorage.getItem("pizza6")==="kylla")
+    {
+        document.getElementById("pizzat6_lista");
+    } 
+    else{
+        document.getElementById("pizzat6_lista").style.display = "none";
+    }
+    if(localStorage.getItem("naytahinta")==="kylla")
+    {
+        document.getElementById("hinta_lista")
+    } else{
+        document.getElementById("hinta_lista").style.display = "none";
+    }
+    if(localStorage.getItem("pizza1")==="kylla" || localStorage.getItem("pizza2")==="kylla" || localStorage.getItem("pizza3")==="kylla" || localStorage.getItem("pizza4")==="kylla" || localStorage.getItem("pizza5")==="kylla" || localStorage.getItem("pizza6")==="kylla")
+    {
+        document.getElementById("tallenna_lista")
     }
     else {
-        document.getElementById("poistapizza1_lista").style.display = "none"
+        document.getElementById("tallenna_lista").style.display = "none";
     }
 
-    if(localStorage.getItem("pizza2") >= 1)
-    {
-        document.getElementById("poistapizza2_lista");
-
-    }
-    else {
-        document.getElementById("poistapizza2_lista").style.display = "none"
-    }
-
-    if(localStorage.getItem("pizza3") >= 1)
-    {
-        document.getElementById("poistapizza3_lista");
-
-    }
-    else {
-        document.getElementById("poistapizza3_lista").style.display = "none"
-    }
-
-    if(localStorage.getItem("pizza4") >= 1)
-    {
-        document.getElementById("poistapizza4_lista");
-
-    }
-    else {
-        document.getElementById("poistapizza4_lista").style.display = "none"
-    }
-
-    if(localStorage.getItem("pizza5") >= 1)
-    {
-        document.getElementById("poistapizza5_lista");
-
-    }
-    else {
-        document.getElementById("poistapizza5_lista").style.display = "none"
-    }
-
-    if(localStorage.getItem("pizza6") >= 1)
-    {
-        document.getElementById("poistapizza6_lista");
-
-    }
-    else {
-        document.getElementById("poistapizza6_lista").style.display = "none"
-    }
 }
 
 function pizza1()
 {
-    const pizzaluk1 = parseInt(localStorage.getItem('pizza1') ?? '0')
-    localStorage.setItem('pizza1', (pizzaluk1 + 1).toString())
-    
+    localStorage.setItem("pizza1", "kylla");
 }
 
 function pizza2()
 {
-    const pizzaluk2 = parseInt(localStorage.getItem('pizza2') ?? '0')
-    localStorage.setItem('pizza2', (pizzaluk2 + 1).toString())
+    localStorage.setItem("pizza2", "kylla");
 }
 
 function pizza3()
 {
-    const pizzaluk3 = parseInt(localStorage.getItem('pizza3') ?? '0')
-    localStorage.setItem('pizza3', (pizzaluk3 + 1).toString())
+    localStorage.setItem("pizza3", "kylla");
 }
 
 function pizza4()
 {
-    const pizzaluk4 = parseInt(localStorage.getItem('pizza4') ?? '0')
-    localStorage.setItem('pizza4', (pizzaluk4 + 1).toString())
+    localStorage.setItem("pizza4", "kylla");
 }
 
 function pizza5()
 {
-    const pizzaluk5 = parseInt(localStorage.getItem('pizza5') ?? '0')
-    localStorage.setItem('pizza5', (pizzaluk5 + 1).toString())
+    localStorage.setItem("pizza5", "kylla");
 }
 
 function pizza6()
 {
-    const pizzaluk6 = parseInt(localStorage.getItem('pizza6') ?? '0')
-    localStorage.setItem('pizza6', (pizzaluk6 + 1).toString())
+    localStorage.setItem("pizza6", "kylla");
 }
 
-function poista1()
+function tallennetaan()
 {
-    const pizzaluk1 = parseInt(localStorage.getItem('pizza1') ?? '0')
-    localStorage.setItem('pizza1', (pizzaluk1 - 1).toString())
+    localStorage.setItem("pizza1maara", document.getElementById("pepperonimaara").value)
+    localStorage.setItem("pizza2maara", document.getElementById("meatlovemaara").value)
+    localStorage.setItem("pizza3maara", document.getElementById("kebabmaara").value)
+    localStorage.setItem("pizza4maara", document.getElementById("bbqmaara").value)
+    localStorage.setItem("pizza5maara", document.getElementById("kinkkumaara").value)
+    localStorage.setItem("pizza6maara", document.getElementById("margaritamaara").value)
+    localStorage.setItem("naytahinta", "kylla")
 }
 
-function poista2()
+
+function poispizza1()
 {
-    const pizzaluk2 = parseInt(localStorage.getItem('pizza2') ?? '0')
-    localStorage.setItem('pizza2', (pizzaluk2 - 1).toString())
+    localStorage.setItem("pizza1", " ");
 }
 
-function poista3()
+function poispizza2()
 {
-    const pizzaluk3 = parseInt(localStorage.getItem('pizza3') ?? '0')
-    localStorage.setItem('pizza3', (pizzaluk3 - 1).toString())
+    localStorage.setItem("pizza2", " ");
 }
-
-function poista4()
+function poispizza3()
 {
-    const pizzaluk4 = parseInt(localStorage.getItem('pizza4') ?? '0')
-    localStorage.setItem('pizza4', (pizzaluk4 - 1).toString())
+    localStorage.setItem("pizza3", " ");
 }
-
-function poista5()
+function poispizza4()
 {
-    const pizzaluk5 = parseInt(localStorage.getItem('pizza5') ?? '0')
-    localStorage.setItem('pizza5', (pizzaluk5 - 1).toString())
+    localStorage.setItem("pizza4", " ");
 }
-
-function poista6()
+function poispizza5()
 {
-    const pizzaluk6 = parseInt(localStorage.getItem('pizza6') ?? '0')
-    localStorage.setItem('pizza6', (pizzaluk6 - 1).toString())
+    localStorage.setItem("pizza5", " ");
+}
+function poispizza6()
+{
+    localStorage.setItem("pizza6", " ");
 }

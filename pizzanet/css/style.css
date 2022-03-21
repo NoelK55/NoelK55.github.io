@@ -25,6 +25,10 @@ body {
     line-height: 1.80857;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 a {
     color: #1f1f1f;

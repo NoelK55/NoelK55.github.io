@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Tilaa</title>
-        <link rel="stylesheet" href="css/tilaus.css">
         <script type="text/javascript" language="javascript" src="js/tilaus.js"></script>
+        <link rel="stylesheet" href="css/tilaus.css">
     </head>
 
     <body>
@@ -24,101 +24,120 @@
         <h2 class="menuteksti">Menu</h2>
         <div id="Pizza1">
             <form id="pizza_lista">
-                <img src="images/pepperoni.jpg" alt="">
+                <img src="images/pepperonipizza.png" alt="">
                 <br>
-                <h2 class="pizzanimi">Pienet pepperonipizzat</h2>
+                <h2 class="pizzanimi">Pepperoni-Pizza</h2>
                 <span class="pepperonitieto">Tomaattikastiketta, juustoa ja pepperonia</span>
                 <br>
                 <br>
                 <input id="pizza_nappi" type="submit" value="Lisää tilaukseen" onClick="pizza1()">
             </form>
         </div>
-        <div id="poistapizza">
-            <form id="poistapizza1_lista">
-                <input id="pizza_nappi" type="submit" value="Poista tilauksesta" onClick="poista1()">
-            </form>
-        </div>
         <div id="Pizza2">
             <form id="pizza_lista">
-                <img src="images/meatlove.jpg" alt="">
+                <img src="images/meatlovepizza.jpg" alt="">
                 <br>
-                <h2 class="pizzanimi">Lasten lihapulla pizza</h2>
-                <span class="pepperonitieto">Tomaattikastiketta, juustoa ja lihapullia</span>
+                <h2 class="pizzanimi">Meatlove-pizza</h2>
+                <span class="pepperonitieto">Tomaattikastiketta, juustoa, tomaattia, pekonia, jauhelihaa, kebablihaa, parmesaanijuustoa</span>
                 <br>
                 <br>
                 <input id="pizza_nappi" type="submit" value="Lisää tilaukseen" onClick="pizza2()">
             </form>
         </div>
-        <div id="poistapizza">
-            <form id="poistapizza2_lista">
-                <input id="pizza_nappi" type="submit" value="Poista tilauksesta" onClick="poista2()">
-            </form>
-        </div>
         <div id="Pizza3">
             <form id="pizza_lista">
-                <img src="images/minipizza" alt="">
+                <img src="images/kebabpizza.jfif" alt="">
                 <br>
-                <h2 class="pizzanimi">Lasten minipizzat</h2>
-                <span class="pepperonitieto">Tomaattikastiketta, juustoa ja pepperonia</span>
+                <h2 class="pizzanimi">Kebab-pizza</h2>
+                <span class="pepperonitieto">Tomaattikastiketta, juustoa, punasipulia, kebablihaa, jalopenoja, talonkastiketta</span>
                 <br>
                 <br>
                 <input id="pizza_nappi" type="submit" value="Lisää tilaukseen" onClick="pizza3()">
             </form>
         </div>
-        <div id="poistapizza">
-            <form id="poistapizza3_lista">
-                <input id="pizza_nappi" type="submit" value="Poista tilauksesta" onClick="poista3()">
-            </form>
-        </div>
         <div id="Pizza4">
             <form id="pizza_lista">
-                <img src="images/liha.jpg" alt="">
+                <img src="images/kanapekonipizza.jpg" alt="">
                 <br>
-                <h2 class="pizzanimi">Lihan ystävät</h2>
-                <span class="pepperonitieto">Tomaattikastiketta, juustoa, paprikaa, pepperonia, salamia ja lihapullia</span>
+                <h2 class="pizzanimi">Kanapekoni-pizza</h2>
+                <span class="pepperonitieto">Tomaattikastiketta, juustoa, punasipulia, kanaa, pekonia ja BBQ-kastiketta</span>
                 <br>
                 <br>
                 <input id="pizza_nappi" type="submit" value="Lisää tilaukseen" onClick="pizza4()">
             </form>
         </div>
-        <div id="poistapizza">
-            <form id="poistapizza4_lista">
-                <input id="pizza_nappi" type="submit" value="Poista tilauksesta" onClick="poista4()">
-            </form>
-        </div>
         <div id="Pizza5">
             <form id="pizza_lista">
-                <img src="images/kanakebab.jpg" alt="">
+                <img src="images/isokinkku.jpg" alt="">
                 <br>
-                <h2 class="pizzanimi">Kanakebab pizza</h2>
-                <span class="pepperonitieto">Tomaattikastiketta, juustoa, kanakebabbia ja rukolaa</span>
+                <h2 class="pizzanimi">Kinkku-pizza</h2>
+                <span class="pepperonitieto">Tomaattikastiketta, juustoa, kinkkua</span>
                 <br>
                 <br>
                 <input id="pizza_nappi" type="submit" value="Lisää tilaukseen" onClick="pizza5()">
             </form>
         </div>
-        <div id="poistapizza">
-            <form id="poistapizza5_lista">
-                <input id="pizza_nappi" type="submit" value="Poista tilauksesta" onClick="poista5()">
-            </form>
-        </div>
         <div id="Pizza6">
             <form id="pizza_lista">
-                <img src="images/isokinkku.jpg" alt="">
+                <img src="images/mergeritapizza.jpeg" alt="">
                 <br>
-                <h2 class="pizzanimi">Iso kinkku pizza</h2>
-                <span class="pepperonitieto">Tomaattikastiketta, juustoa ja kinkkua</span>
+                <h2 class="pizzanimi">Margarita-pizza</h2>
+                <span class="pepperonitieto">Tomaattikastiketta, juustoa, tuoretta basilikaa</span>
                 <br>
                 <br>
                 <input id="pizza_nappi" type="submit" value="Lisää tilaukseen" onClick="pizza6()">
             </form>
         </div>
-        <div id="poistapizza">
-            <form id="poistapizza6_lista">
-                <input id="pizza_nappi" type="submit" value="Poista tilauksesta" onClick="poista6()">
+        <br>
+        <br>
+        <div id="valituttuotteet">
+            <form id="valituttuotteet_lista">
+                <h2 id="valitut_teksti">Valitsemasi tuotteet</h2>
+            </form>
+            <form id="pizzat1_lista">
+                <span>Pepperoni-Pizza</span> 
+                <input id="pepperonimaara" type="number" name="pepperonimaara" min="1" max="10">
+                <input id="poispepperoni" type="submit" value="Poista" onClick="poispizza1()">
+                <br>
+            </form>
+            <form id="pizzat2_lista">
+                <span>Meatlove-pizza</span> 
+                <input id="meatlovemaara" type="number" name="meatlovemaara" min="1" max="10">
+                <input id="poismeatlove" type="submit" value="Poista" onClick="poispizza2()">
+                <br>
+            </form>
+            <form id="pizzat3_lista">
+                <span>Kebab-pizza</span> 
+                <input id="kebabmaara" type="number" name="kebabmaara" min="1" max="10">
+                <input id="poiskebab" type="submit" value="Poista" onClick="poispizza3()">
+                <br>
+            </form>
+            <form id="pizzat4_lista">
+                <span>Kanapekoni-pizza</span> 
+                <input id="bbqmaara" type="number" name="bbqmaara" min="1" max="10">
+                <input id="poisbbq" type="submit" value="Poista" onClick="poispizza4()">
+                <br>
+            </form>
+            <form id="pizzat5_lista">
+                <span>Kinkku-pizza</span> 
+                <input id="kinkkumaara" type="number" name="kinkkumaara" min="1" max="10">
+                <input id="poiskinkku" type="submit" value="Poista" onClick="poispizza5()">
+                <br>
+            </form>
+            <form id="pizzat6_lista">
+                <span>Margarita-pizza</span> 
+                <input id="margaritamaara" type="number" name="margaritamaara" min="1" max="10">
+                <input id="poismargarita" type="submit" value="Poista" onClick="poispizza6()">
+                <br>
+            </form>
+            <form id="tallenna_lista">
+                <br>
+                <br>
+                <input id="tallenna1" type="submit" value="Tallenna valinnat" onClick="tallennetaan()">
+            </form>
+            <form id="hinta_lista">
+                <p id="hinta"></p>
             </form>
         </div>
-        <br>
-        <br>
     </body>
 </html>
