@@ -44,50 +44,53 @@ function aloitus()
     else{
         document.getElementById("pizzat6_lista").style.display = "none";
     }
-    if(localStorage.getItem("naytahinta")==="kylla")
-    {
-        document.getElementById("hinta_lista")
-    } else{
-        document.getElementById("hinta_lista").style.display = "none";
-    }
     if(localStorage.getItem("pizza1")==="kylla" || localStorage.getItem("pizza2")==="kylla" || localStorage.getItem("pizza3")==="kylla" || localStorage.getItem("pizza4")==="kylla" || localStorage.getItem("pizza5")==="kylla" || localStorage.getItem("pizza6")==="kylla")
     {
         document.getElementById("tallenna_lista")
+        document.getElementById("hinta_lista")
     }
     else {
         document.getElementById("tallenna_lista").style.display = "none";
+        document.getElementById("hinta_lista").style.display = "none";
     }
+    document.getElementById("summa").innerHTML = localStorage.getItem("hinta") + "€";
 
 }
 
 function pizza1()
 {
     localStorage.setItem("pizza1", "kylla");
+    localStorage.setItem("hinta", " ");
 }
 
 function pizza2()
 {
     localStorage.setItem("pizza2", "kylla");
+    localStorage.setItem("hinta", " ");
 }
 
 function pizza3()
 {
     localStorage.setItem("pizza3", "kylla");
+    localStorage.setItem("hinta", " ");
 }
 
 function pizza4()
 {
     localStorage.setItem("pizza4", "kylla");
+    localStorage.setItem("hinta", " ");
 }
 
 function pizza5()
 {
     localStorage.setItem("pizza5", "kylla");
+    localStorage.setItem("hinta", " ");
 }
 
 function pizza6()
 {
     localStorage.setItem("pizza6", "kylla");
+    localStorage.setItem("hinta", " ");
 }
 
 function tallennetaan()
@@ -98,32 +101,44 @@ function tallennetaan()
     localStorage.setItem("pizza4maara", document.getElementById("bbqmaara").value)
     localStorage.setItem("pizza5maara", document.getElementById("kinkkumaara").value)
     localStorage.setItem("pizza6maara", document.getElementById("margaritamaara").value)
-    localStorage.setItem("naytahinta", "kylla")
+    let pizza1hinta = document.getElementById("pepperonimaara").value * 9.20;
+    let pizza2hinta = document.getElementById("meatlovemaara").value * 11.80;
+    let pizza3hinta = document.getElementById("kebabmaara").value * 10.99;
+    let pizza4hinta = document.getElementById("bbqmaara").value * 11.20;
+    let pizza5hinta = document.getElementById("kinkkumaara").value * 10.50;
+    let pizza6hinta = document.getElementById("margaritamaara").value * 9.20;
+    localStorage.setItem("hinta", pizza1hinta + pizza2hinta + pizza3hinta + pizza4hinta + pizza5hinta + pizza6hinta)
 }
 
 
 function poispizza1()
 {
     localStorage.setItem("pizza1", " ");
+    localStorage.setItem("hinta", " ");
 }
 
 function poispizza2()
 {
     localStorage.setItem("pizza2", " ");
+    localStorage.setItem("hinta", " ");
 }
 function poispizza3()
 {
     localStorage.setItem("pizza3", " ");
+    localStorage.setItem("hinta", " ");
 }
 function poispizza4()
 {
     localStorage.setItem("pizza4", " ");
+    localStorage.setItem("hinta", " ");
 }
 function poispizza5()
 {
     localStorage.setItem("pizza5", " ");
+    localStorage.setItem("hinta", " ");
 }
 function poispizza6()
 {
     localStorage.setItem("pizza6", " ");
+    localStorage.setItem("hinta", " ");
 }
