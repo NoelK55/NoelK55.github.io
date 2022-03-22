@@ -55,6 +55,31 @@ function aloitus()
     }
     document.getElementById("summa").innerHTML = localStorage.getItem("hinta") + "€";
 
+    if(localStorage.getItem("fanval")==="kylla")
+    {
+        document.getElementById("tayte1_lista")
+        document.getElementById("tayte2_lista")
+        document.getElementById("tayte3_lista")
+        document.getElementById("tayte4_lista")
+        document.getElementById("valkosipuli_lista")
+        document.getElementById("juusto_lista")
+        document.getElementById("pohja_lista")
+        document.getElementById("fanvalit_lista").style.display = "none"
+        document.getElementById("fanvalmis_lista")
+        document.getElementById("fanper_lista")
+    } else {
+        document.getElementById("tayte1_lista").style.display = "none"
+        document.getElementById("tayte2_lista").style.display = "none"
+        document.getElementById("tayte3_lista").style.display = "none"
+        document.getElementById("tayte4_lista").style.display = "none"
+        document.getElementById("valkosipuli_lista").style.display = "none"
+        document.getElementById("juusto_lista").style.display = "none"
+        document.getElementById("pohja_lista").style.display = "none"
+        document.getElementById("fanvalit_lista")
+        document.getElementById("fanvalmis_lista").style.display = "none"
+        document.getElementById("fanper_lista").style.display = "none"
+    }
+
 }
 
 function pizza1()
@@ -141,4 +166,160 @@ function poispizza6()
 {
     localStorage.setItem("pizza6", " ");
     localStorage.setItem("hinta", " ");
+}
+
+function fantasiaval()
+{
+    localStorage.setItem("fanval", "kylla");
+}
+
+function peptay1() 
+{
+    localStorage.setItem("tayte1", "pepperoni");
+}
+
+function kinktay1() 
+{
+    localStorage.setItem("tayte1", "kinkku");
+}
+
+function kebtay1() 
+{
+    localStorage.setItem("tayte1", "kebab");
+}
+
+function jautay1() 
+{
+    localStorage.setItem("tayte1", "jauheliha");
+}
+
+function maktay1() 
+{
+    localStorage.setItem("tayte1", "makkara");
+}
+
+function peptay2() 
+{
+    localStorage.setItem("tayte2", "pepperoni");
+}
+
+function kinktay2() 
+{
+    localStorage.setItem("tayte2", "kinkku");
+}
+
+function kebtay2() 
+{
+    localStorage.setItem("tayte2", "kebab");
+}
+
+function jautay2() 
+{
+    localStorage.setItem("tayte2", "jauheliha");
+}
+
+function maktay2() 
+{
+    localStorage.setItem("tayte2", "makkara");
+}
+
+function totay1() 
+{
+    localStorage.setItem("tayte3", "tomaatti");
+}
+
+function putay1() 
+{
+    localStorage.setItem("tayte3", "punasipuli");
+}
+
+function oltay1() 
+{
+    localStorage.setItem("tayte3", "oliivi");
+}
+
+function jatay1()
+{
+    localStorage.setItem("tayte3", "jalopeno");
+}
+
+function autay1() 
+{
+    localStorage.setItem("tayte3", "aurinkokuivattutomaatti");
+}
+
+function totay2() 
+{
+    localStorage.setItem("tayte4", "tomaatti");
+}
+
+function putay2() 
+{
+    localStorage.setItem("tayte4", "punasipuli");
+}
+
+function oltay2() 
+{
+    localStorage.setItem("tayte4", "oliivi");
+}
+
+function jatay2()
+{
+    localStorage.setItem("tayte4", "jalopeno");
+}
+
+function autay2() 
+{
+    localStorage.setItem("tayte4", "aurinkokuivattutomaatti");
+}
+
+function valko1()
+{
+    localStorage.setItem("valkosipuli", "ei");
+}
+
+function valko2()
+{
+    localStorage.setItem("valkosipuli", "kylla");
+}
+
+function emmen()
+{
+    localStorage.setItem("juusto", "emmental");
+}
+
+function aura()
+{
+    localStorage.setItem("juusto", "aurajuusto");
+}
+
+function salaneuvos()
+{
+    localStorage.setItem("juusto", "salaneuvos");
+}
+
+function mozza()
+{
+    localStorage.setItem("juusto", "mozzarella");
+}
+
+function normaali()
+{
+    localStorage.setItem("pohja", "normaali");
+}
+
+function gluteeni()
+{
+    localStorage.setItem("pohja", "gluteeniton");
+}
+
+function fantasiaperuutus()
+{
+    localStorage.setItem("fanval", " ");
+}
+
+function fantasiavalmis()
+{
+    localStorage.setItem("fanval", " ");
+    localStorage.setItem("fantasiavalmis", "kylla");
 }

@@ -88,6 +88,104 @@
                 <input id="pizza_nappi" type="submit" value="Lisää tilaukseen" onClick="pizza6()">
             </form>
         </div>
+        <div id="fantasia">
+            <form id="pizza_lista">
+                <img src="images/fantasia.jfif" alt="">
+                <br>
+                <h2 class="pizzanimi">Fantasia-pizza 12.90€</h2>
+                <span class="fantasiatieto">4 omavalintaista täyttettä</span>
+                <br>
+                <br>
+            </form>
+            <form id="fanvalit_lista">
+                <input id="pizza_nappi" type="submit" value="valitse" onClick="fantasiaval()">
+                <br>
+                <br>
+            </form>
+            <form id="tayte1_lista">
+                <p>Valitse numero 1 täyte</p>
+                <label for="pepperoni">  Pepperoni</label>
+                <input id="pepperoni" name="tayte1_lista" type="radio" value="pepperoni" onClick="peptay1()">
+                <label for="kinkku">  Kinkku</label>
+                <input id="kinkku" name="tayte1_lista" type="radio" value="kinkku" onClick="kinktay1()">
+                <label for="kebab">  Kebab</label>
+                <input id="kebab" name="tayte1_lista" type="radio" value="kebab" onClick="kebtay1()">
+                <label for="jauheliha">  Jauheliha</label>
+                <input id="jauheliha" name="tayte1_lista" type="radio" value="jauheliha" onClick="jautay1()">
+                <label for="makkara">  Makkara</label>
+                <input id="makkara" name="tayte1_lista" type="radio" value="makkara" onClick="maktay1()">
+            </form>
+            <form id="tayte2_lista">
+                <p>Valitse numero 2 täyte</p>
+                <label for="pepperoni">  Pepperoni</label>
+                <input id="pepperoni" name="tayte2_lista" type="radio" value="pepperoni" onClick="peptay2()">
+                <label for="kinkku">  Kinkku</label>
+                <input id="kinkku" name="tayte2_lista" type="radio" value="kinkku" onClick="kinktay2()">
+                <label for="kebab">  Kebab</label>
+                <input id="kebab" name="tayte2_lista" type="radio" value="kebab" onClick="kebtay2()"> 
+                <label for="jauheliha">  Jauheliha</label>
+                <input id="jauheliha" name="tayte2_lista" type="radio" value="jauheliha" onClick="jautay2()">
+                <label for="makkara">  Makkara</label>
+                <input id="makkara" name="tayte2_lista" type="radio" value="makkara" onClick="maktay2()">
+            </form>
+            <form id="tayte3_lista">
+                <p>Valitse numero 3 täyte</p>
+                <label for="tomaatti">  Tomaatti</label>
+                <input id="tomaatti" name="tayte3_lista" type="radio" value="tomaatti" onClick="totay1()">
+                <label for="punasipuli">  Punasipuli</label>
+                <input id="punasipuli" name="tayte3_lista" type="radio" value="punasipuli" onClick="putay1()">
+                <label for="oliivi">  Oliivi</label>
+                <input id="oliivi" name="tayte3_lista" type="radio" value="oliivi" onClick="oltay1()">
+                <label for="jalopeno">  Jalopeno</label>
+                <input id="jalopeno" name="tayte3_lista" type="radio" value="jalopeno" onClick="jatay1()">
+                <label for="aurinkokuivattu">  Aurinkokuivattutomaatti</label>
+                <input id="aurinkokuivattu" name="tayte3_lista" type="radio" value="aurinkokuivattu" onClick="autay1()">
+            </form>
+            <form id="tayte4_lista">
+                <p>Valitse numero 4 täyte</p>
+                <label for="tomaatti">  Tomaatti</label>
+                <input id="tomaatti" name="tayte4_lista" type="radio" value="tomaatti" onClick="totay2()">
+                <label for="punasipuli">  Punasipuli</label>
+                <input id="punasipuli" name="tayte4_lista" type="radio" value="punasipuli" onClick="putay2()">
+                <label for="oliivi">  Oliivi</label>
+                <input id="oliivi" name="tayte4_lista" type="radio" value="oliivi" onClick="oltay2()">
+                <label for="jalopeno">  Jalopeno</label>
+                <input id="jalopeno" name="tayte4_lista" type="radio" value="jalopeno" onClick="jatay2()">
+                <label for="aurinkokuivattu">  Aurinkokuivattutomaatti</label>
+                <input id="aurinkokuivattu" name="tayte4_lista" type="radio" value="aurinkokuivattu" onClick="autay2()">
+            </form>
+            <form id="valkosipuli_lista">
+                <p>Laitetaanko valkosipulia?</p>
+                <label for="ei">Ei</label>
+                <input id="ei" name="valkosipuli_lista" type="radio" value="ei" onClick="valko1()">
+                <label for="kylla">Kyllä</label>
+                <input id="kylla" name="valkosipuli_lista" type="radio" value="kylla" onClick="valko2()">
+            </form>
+            <form id="juusto_lista">
+                <p>Mitä juustoa laitetaan?</p>
+                <label for="emmen">Emmental</label>
+                <input id="emmen" name="juusto_lista" type="radio" value="emmen" onClick="emmen()">
+                <label for="aura">Aurajuusto</label>
+                <input id="aura" name="juusto_lista" type="radio" value="aura" onClick="aura()">
+                <label for="salaneuvos">Salaneuvos</label>
+                <input id="salaneuvos" name="juusto_lista" type="radio" value="salaneuvos" onClick="salaneuvos()">
+                <label for="mozza">Mozzarella</label>
+                <input id="mozza" name="juusto_lista" type="radio" value="mozza" onClick="mozza()">
+            </form>
+            <form id="pohja_lista">
+                <p>Normaali- vai gluteenitonpohja?</p>
+                <label for="normaali">Normaali</label>
+                <input id="normaali" name="pohja_lista" type="radio" value="normaali" onClick="normaali()">
+                <label for="gluteeni">Gluteeniton + 2€</label>
+                <input id="gluteeniton" name="pohja_lista" type="radio" value="gluteeniton" onClick="gluteeni()">
+            </form>
+            <form id="fanvalmis_lista">
+                <input id="pizza_nappi" type="submit" value="Valmis" onClick="fantasiavalmis()">
+            </form>
+            <form id="fanper_lista">
+                <input id="pizza_nappi" type="submit" value="Peruuta" onClick="fantasiaperuutus()">
+            </form>
+        </div>
         <br>
         <br>
         <div id="valituttuotteet">

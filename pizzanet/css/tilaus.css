@@ -39,6 +39,40 @@ img {
     text-align: center;
 }
 
+#tayte1_lista {
+    text-align: center;
+}
+#tayte2_lista {
+    text-align: center;
+}
+#tayte3_lista {
+    text-align: center;
+}
+#tayte4_lista {
+    text-align: center;
+}
+
+#valkosipuli_lista {
+    text-align: center;
+}
+#juusto_lista {
+    text-align: center;
+}
+#pohja_lista {
+    text-align: center;
+}
+#fanvalit_lista {
+    text-align: center;
+}
+#fanvalmis_lista {
+    text-align: center;
+}
+#fanper_lista {
+    text-align: center;
+}
+
+
+
 input[type=submit] {
     width: 20em; 
     height: 2em;
@@ -100,8 +134,3 @@ input[type=submit] {
     text-align: center;
 }
 
-#poistafantasia_lista {
-    padding-top: 25px;
-    padding-bottom: 10px;
-    text-align: center;
-}
