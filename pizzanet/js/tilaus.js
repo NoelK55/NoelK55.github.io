@@ -44,40 +44,66 @@ function aloitus()
     else{
         document.getElementById("pizzat6_lista").style.display = "none";
     }
-    if(localStorage.getItem("pizza1")==="kylla" || localStorage.getItem("pizza2")==="kylla" || localStorage.getItem("pizza3")==="kylla" || localStorage.getItem("pizza4")==="kylla" || localStorage.getItem("pizza5")==="kylla" || localStorage.getItem("pizza6")==="kylla")
+    if(localStorage.getItem("pizza1")==="kylla" || localStorage.getItem("pizza2")==="kylla" || localStorage.getItem("pizza3")==="kylla" || localStorage.getItem("pizza4")==="kylla" || localStorage.getItem("pizza5")==="kylla" || localStorage.getItem("pizza6")==="kylla" ||  localStorage.getItem("fantasiavalmis")===("kylla"))
     {
         document.getElementById("tallenna_lista")
         document.getElementById("hinta_lista")
+        document.getElementById("kuljetus_lista")
     }
     else {
         document.getElementById("tallenna_lista").style.display = "none";
         document.getElementById("hinta_lista").style.display = "none";
+        document.getElementById("kuljetus_lista").style.display = "none";
     }
     document.getElementById("summa").innerHTML = localStorage.getItem("hinta") + "€";
 
-    if(localStorage.getItem("fanval")==="kylla")
+
+    if(localStorage.getItem("tilauskasittely")==="meneillaan")
     {
-        document.getElementById("tayte1_lista")
-        document.getElementById("tayte2_lista")
-        document.getElementById("tayte3_lista")
-        document.getElementById("tayte4_lista")
-        document.getElementById("valkosipuli_lista")
-        document.getElementById("juusto_lista")
-        document.getElementById("pohja_lista")
-        document.getElementById("fanvalit_lista").style.display = "none"
-        document.getElementById("fanvalmis_lista")
-        document.getElementById("fanper_lista")
-    } else {
-        document.getElementById("tayte1_lista").style.display = "none"
-        document.getElementById("tayte2_lista").style.display = "none"
-        document.getElementById("tayte3_lista").style.display = "none"
-        document.getElementById("tayte4_lista").style.display = "none"
-        document.getElementById("valkosipuli_lista").style.display = "none"
-        document.getElementById("juusto_lista").style.display = "none"
-        document.getElementById("pohja_lista").style.display = "none"
-        document.getElementById("fanvalit_lista")
-        document.getElementById("fanvalmis_lista").style.display = "none"
-        document.getElementById("fanper_lista").style.display = "none"
+        document.getElementById("tallenna_lista").style.display = "none";
+        document.getElementById("hinta_lista").style.display = "none";
+        document.getElementById("kuljetukset_lista")
+    } else 
+    {
+        document.getElementById("kuljetukset_lista").style.display = "none";
+    }
+
+    if(localStorage.getItem("kuljetus")==="kylla")
+    {
+        document.getElementById("kuljetus_etaisyys");
+    } else 
+    {
+        document.getElementById("kuljetus_etaisyys").style.display = "none";
+    }
+
+    if(localStorage.getItem("matka") === "yksi" || localStorage.getItem("matka") === "kaksi" || localStorage.getItem("matka") === "kolme") 
+    {
+        document.getElementById("maksu_lista")
+        document.getElementById("kuljetus_etaisyys").style.display = "none";
+        document.getElementById("kuljetukset_lista").style.display = "none";
+        document.getElementById("maksuhinta").innerHTML = localStorage.getItem("hinta") + "€";
+        
+    } else 
+    {
+        document.getElementById("maksu_lista").style.display = "none";
+    }
+
+    if(localStorage.getItem("nouto")==="kylla")
+    {
+        document.getElementById("maksu2_lista");
+        document.getElementById("maksuhinta2").innerHTML = localStorage.getItem("hinta") + "€";
+    } else
+    {
+        document.getElementById("maksu2_lista").style.display = "none";
+    }
+
+    if(localStorage.getItem("maksu")==="kylla")
+    {
+        document.getElementById("nouto_maksu")
+        document.getElementById("maksu2_lista").style.display = "none";
+    } else 
+    {
+        document.getElementById("nouto_maksu").style.display = "none";
     }
 
 }
@@ -168,158 +194,63 @@ function poispizza6()
     localStorage.setItem("hinta", " ");
 }
 
-function fantasiaval()
+function tilaus()
 {
-    localStorage.setItem("fanval", "kylla");
+    localStorage.setItem("tilauskasittely", "meneillaan");
+    localStorage.setItem("pizza1", " ");
+    localStorage.setItem("pizza2", " ");
+    localStorage.setItem("pizza3", " ");
+    localStorage.setItem("pizza4", " ");
+    localStorage.setItem("pizza5", " ");
+    localStorage.setItem("pizza6", " ");
 }
 
-function peptay1() 
+function kuljetetaan()
 {
-    localStorage.setItem("tayte1", "pepperoni");
+    localStorage.setItem("kuljetus", "kylla")
+    localStorage.setItem("nouto", " ")
 }
 
-function kinktay1() 
+function matka1()
 {
-    localStorage.setItem("tayte1", "kinkku");
+    localStorage.setItem("matka", "yksi");
 }
 
-function kebtay1() 
+function matka2()
 {
-    localStorage.setItem("tayte1", "kebab");
+    localStorage.setItem("matka", "kaksi");
 }
 
-function jautay1() 
+function matka3()
 {
-    localStorage.setItem("tayte1", "jauheliha");
+    localStorage.setItem("matka", "kolme");
 }
 
-function maktay1() 
+function kuljetusperuutus()
 {
-    localStorage.setItem("tayte1", "makkara");
+    localStorage.setItem("tilauskasittely", " ");
+    localStorage.setItem("kuljetus", " ");
 }
 
-function peptay2() 
+function maksuperuutus()
 {
-    localStorage.setItem("tayte2", "pepperoni");
+    localStorage.setItem("matka", " ");
+    localStorage.setItem("kuljetus", " ");
+    localStorage.setItem("nouto", " ");
 }
 
-function kinktay2() 
+function noudetaan()
 {
-    localStorage.setItem("tayte2", "kinkku");
+    localStorage.setItem("nouto", "kylla")
+    localStorage.setItem("kuljetus", " ")
 }
 
-function kebtay2() 
+function maksetaan()
 {
-    localStorage.setItem("tayte2", "kebab");
+    localStorage.setItem("maksu", "kylla")
 }
 
-function jautay2() 
+function maksetaan2()
 {
-    localStorage.setItem("tayte2", "jauheliha");
-}
-
-function maktay2() 
-{
-    localStorage.setItem("tayte2", "makkara");
-}
-
-function totay1() 
-{
-    localStorage.setItem("tayte3", "tomaatti");
-}
-
-function putay1() 
-{
-    localStorage.setItem("tayte3", "punasipuli");
-}
-
-function oltay1() 
-{
-    localStorage.setItem("tayte3", "oliivi");
-}
-
-function jatay1()
-{
-    localStorage.setItem("tayte3", "jalopeno");
-}
-
-function autay1() 
-{
-    localStorage.setItem("tayte3", "aurinkokuivattutomaatti");
-}
-
-function totay2() 
-{
-    localStorage.setItem("tayte4", "tomaatti");
-}
-
-function putay2() 
-{
-    localStorage.setItem("tayte4", "punasipuli");
-}
-
-function oltay2() 
-{
-    localStorage.setItem("tayte4", "oliivi");
-}
-
-function jatay2()
-{
-    localStorage.setItem("tayte4", "jalopeno");
-}
-
-function autay2() 
-{
-    localStorage.setItem("tayte4", "aurinkokuivattutomaatti");
-}
-
-function valko1()
-{
-    localStorage.setItem("valkosipuli", "ei");
-}
-
-function valko2()
-{
-    localStorage.setItem("valkosipuli", "kylla");
-}
-
-function emmen()
-{
-    localStorage.setItem("juusto", "emmental");
-}
-
-function aura()
-{
-    localStorage.setItem("juusto", "aurajuusto");
-}
-
-function salaneuvos()
-{
-    localStorage.setItem("juusto", "salaneuvos");
-}
-
-function mozza()
-{
-    localStorage.setItem("juusto", "mozzarella");
-}
-
-function normaali()
-{
-    localStorage.setItem("pohja", "normaali");
-}
-
-function gluteeni()
-{
-    localStorage.setItem("pohja", "gluteeniton");
-}
-
-function fantasiaperuutus()
-{
-    localStorage.setItem("fanval", " ");
-}
-
-function fantasiavalmis()
-{
-    localStorage.setItem("fanval", " ");
-    localStorage.setItem("fantasiavalmis", "kylla");
+    localStorage.setItem("maksu2", "kylla")
 }
