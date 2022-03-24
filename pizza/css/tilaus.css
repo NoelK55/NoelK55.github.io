@@ -56,12 +56,13 @@ input[type=submit] {
     background-color: beige;
     padding-top: 30px;
     padding-bottom: 50px;
+    font-size: 17px;
     
 }
 
 #tilaamasi {
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 #poistapizza1_lista {
