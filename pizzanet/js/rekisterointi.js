@@ -55,7 +55,6 @@ function alku()
         document.getElementById("kirjautuminenon_lista").style.display = "none";
         document.getElementById("kirjaa_ulos").style.display = "none";
     }
-
 }
 
 function kirjaudu()

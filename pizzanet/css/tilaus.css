@@ -6,8 +6,8 @@ body {
 h1 {
     text-align: center;
     padding: 25px;
-    background-color: red;
-    color: green;
+    background-color: orange;
+    color: white;
 }
 
 .koti-link {
@@ -76,7 +76,8 @@ img {
 input[type=submit] {
     width: 20em; 
     height: 2em;
-    background-color: red;
+    background-color: orange;
+    color: white;
 }
 
 .menuteksti {

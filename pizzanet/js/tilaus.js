@@ -56,7 +56,20 @@ function aloitus()
         document.getElementById("kuljetus_lista").style.display = "none";
     }
     document.getElementById("summa").innerHTML = localStorage.getItem("hinta") + "€";
-
+    document.getElementById("noutoaika").innerHTML = localStorage.getItem("nouaika") + " min";
+    if(localStorage.getItem("matka")==="yksi")
+    {
+        let matkaaika = 5;
+        document.getElementById("kuljetusaika").innerHTML = "Pizzojen valmistuksessa: " + localStorage.getItem("kulaika") + " min" + " ja kuljetuksessa: " + matkaaika + " min";
+    } else if(localStorage.getItem("matka")==="kaksi")
+    {
+        let matkaaika = 10;
+        document.getElementById("kuljetusaika").innerHTML = "Pizzojen valmistuksessa: " + localStorage.getItem("kulaika") + " min" + " ja kuljetuksessa: " + matkaaika + " min";
+    } else if(localStorage.getItem("matka")==="kolme")
+    {
+        let matkaaika = 20;
+        document.getElementById("kuljetusaika").innerHTML = "Pizzojen valmistuksessa: " + localStorage.getItem("kulaika") + " min" + " ja kuljetuksessa: " + matkaaika + " min";
+    } else{}
 
     if(localStorage.getItem("tilauskasittely")==="meneillaan")
     {
@@ -97,13 +110,27 @@ function aloitus()
         document.getElementById("maksu2_lista").style.display = "none";
     }
 
-    if(localStorage.getItem("maksu")==="kylla")
+    if(localStorage.getItem("maksu2")==="kylla")
     {
         document.getElementById("nouto_maksu")
+        document.getElementById("tilauskoti")
         document.getElementById("maksu2_lista").style.display = "none";
+        document.getElementById("kuljetukset_lista").style.display = "none";
     } else 
     {
         document.getElementById("nouto_maksu").style.display = "none";
+        document.getElementById("tilauskoti").style.display = "none";
+    }
+    if(localStorage.getItem("maksu")==="kylla")
+    {
+        document.getElementById("kuljetus_maksu")
+        document.getElementById("tilauskoti2")
+        document.getElementById("maksu_lista").style.display = "none";
+        document.getElementById("kuljetukset_lista").style.display = "none";
+    } else 
+    {
+        document.getElementById("kuljetus_maksu").style.display = "none";
+        document.getElementById("tilauskoti2").style.display = "none";
     }
 
 }
@@ -159,6 +186,20 @@ function tallennetaan()
     let pizza5hinta = document.getElementById("kinkkumaara").value * 10.50;
     let pizza6hinta = document.getElementById("margaritamaara").value * 9.20;
     localStorage.setItem("hinta", pizza1hinta + pizza2hinta + pizza3hinta + pizza4hinta + pizza5hinta + pizza6hinta)
+    let aika11 = document.getElementById("pepperonimaara").value * 5.00;
+    let aika12 = document.getElementById("meatlovemaara").value * 6.00;
+    let aika13 = document.getElementById("kebabmaara").value * 5.00;
+    let aika14 = document.getElementById("bbqmaara").value * 5.00;
+    let aika15 = document.getElementById("kinkkumaara").value * 5.00;
+    let aika16 = document.getElementById("margaritamaara").value * 4.00;
+    localStorage.setItem("nouaika", aika11 + aika12 + aika13 + aika14 + aika15 + aika16)
+    let aika21 = document.getElementById("pepperonimaara").value * 5.00;
+    let aika22 = document.getElementById("meatlovemaara").value * 6.00;
+    let aika23 = document.getElementById("kebabmaara").value * 5.00;
+    let aika24 = document.getElementById("bbqmaara").value * 5.00;
+    let aika25 = document.getElementById("kinkkumaara").value * 5.00;
+    let aika26 = document.getElementById("margaritamaara").value * 4.00;
+    localStorage.setItem("kulaika", aika21 + aika22 + aika23 + aika24 + aika25 + aika26)
 }
 
 
@@ -209,6 +250,7 @@ function kuljetetaan()
 {
     localStorage.setItem("kuljetus", "kylla")
     localStorage.setItem("nouto", " ")
+    localStorage.setItem("maksu2", " ")
 }
 
 function matka1()
@@ -243,6 +285,7 @@ function noudetaan()
 {
     localStorage.setItem("nouto", "kylla")
     localStorage.setItem("kuljetus", " ")
+    localStorage.setItem("maksu", " ")
 }
 
 function maksetaan()
@@ -253,4 +296,28 @@ function maksetaan()
 function maksetaan2()
 {
     localStorage.setItem("maksu2", "kylla")
+}
+
+function putsaus1()
+{
+    localStorage.setItem("tilauskasittely", " ")
+    localStorage.setItem("maksu", " ")
+    localStorage.setItem("hinta", " ")
+    localStorage.setItem("matka", " ")
+    localStorage.setItem("kuljetus", " ")
+    localStorage.setItem("maksu2", " ")
+    localStorage.setItem("nouto", " ")
+    
+}
+
+function putsaus2()
+{
+    localStorage.setItem("tilauskasittely", " ")
+    localStorage.setItem("maksu", " ")
+    localStorage.setItem("hinta", " ")
+    localStorage.setItem("matka", " ")
+    localStorage.setItem("kuljetus", " ")
+    localStorage.setItem("maksu2", " ")
+    localStorage.setItem("nouto", " ")
+    
 }
