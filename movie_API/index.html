@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/vue@2.4.3/dist/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    </head>
+    <body>
+        <div id="request">
+        <input type="text" placeholder="Write movie name..." v-model="title" v-on:keyup.enter="requestMovieInfo">
+        <div>
+            {{requestedText}}
+        </div>
+        <div>
+            {{ratingsText}}
+        </div>
+        </div>
+    </body>
+    <script lang="javascript">
+        var vm = new Vue({
+            el: "#request",
+            data: {
+                title: null,
+                requestedText: null,
+                ratingsText: null,
+            },
+
+            methods: {
+                requestMovieInfo: async function(e) {
+                    let response = [];
+                    await axios.get(`http://www.omdbapi.com/?t=${this.title}&apikey=b22fce98`)
+                    .then((result) => {
+                        response = result.data
+                    });
+                    console.log(response); 
+                    let packet = [];
+                    packet.push(response.Title, response.Year, response.Awards)
+                    this.requestedText = packet.sort();
+                    this.ratingsText = response.Ratings;
+                },
+            },
+        })
+
+
+
+    </script>
+    <style>
+
+    </style>
+
+
+</html>
