@@ -5,36 +5,46 @@
     </head>
     <body>
         <div id="request">
-        <input type="text" placeholder="Write movie name..." v-model="title" v-on:keyup.enter="requestMovieInfo">
-        <div>
-            {{requestedText}}
-        </div>
-        <div>
-            {{ratingsText}}
-        </div>
+            <input type="text" placeholder="Write movie name..." v-model="reqTitle" v-on:keyup.enter="requestMovieInfo">
+            <div class="response">
+                <h2> {{ title }}</h2>
+                <h3> {{ year }}</h3>
+                <p> {{ awards == 'N/A' ? 'No awards :(' : awards}}</p>
+                <div v-for="rating in ratings" :key="rating.Source">
+                    {{rating.Source}}: {{rating.Value}}
+                </div>
+            </div>
         </div>
     </body>
     <script lang="javascript">
         var vm = new Vue({
             el: "#request",
             data: {
+                reqTitle: null,
                 title: null,
-                requestedText: null,
-                ratingsText: null,
-            },
+                year: null,
+                awards: null,
+                ratings: null
+            }, 
 
             methods: {
                 requestMovieInfo: async function(e) {
                     let response = [];
-                    await axios.get(`http://www.omdbapi.com/?t=${this.title}&apikey=b22fce98`)
+                    await axios.get(`http://www.omdbapi.com/?t=${this.reqTitle}&apikey=b22fce98`)
                     .then((result) => {
                         response = result.data
                     });
                     console.log(response); 
-                    let packet = [];
-                    packet.push(response.Title, response.Year, response.Awards)
-                    this.requestedText = packet.sort();
-                    this.ratingsText = response.Ratings;
+                    if(response.Response == "False")
+                    {
+                        this.title = "Sorry, no movie found :(";
+                        console.log("Movie not found!!!");
+                    } else {
+                        this.title = response.Title;
+                        this.year = response.Year;
+                        this.awards = response.Awards;
+                        this.ratings = response.Ratings;
+                    }
                 },
             },
         })
