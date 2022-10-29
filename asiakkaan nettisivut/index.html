@@ -78,12 +78,110 @@
                 </div>
             </div>
         </div>
+        <!-- Work -->
+        <div class="work">
+            <div class="container">
+                <div id="workExperience">
+                    <div id="workTitle">
+                        <h2>Working experience:</h2> 
+                    </div>
+                    <div id="workDiv">
+                        <div id="workPlace">
+                            <h3>Työpaikka</h3>
+                        </div>
+                        <div id="workPlaceExperience">
+                            Jotain
+                        </div>
+                    </div>
+                    <div id="workDiv">
+                        <div id="workPlace">
+                            <h3>Työpaikka</h3>
+                        </div>
+                        <div id="workPlaceExperience">
+                            Jotain
+                        </div>
+                    </div>
+                    <div id="workDiv">
+                        <div id="workPlace">
+                            <h3>Työpaikka</h3>
+                        </div>
+                        <div id="workPlaceExperience">
+                            Jotain
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- School -->
         <div class="school">
             <div class="container">
-                <div id="schools">
-                    <div id="schoolsTitle">
-                        Jotain
+                <div id="schoolAndLang">
+                    <div id="schools">
+                        <div id="schoolsTitle">
+                            <h2>Schools:</h2>
+                        </div>
+                        <div id="schoolsContent">
+                            <div id="schoolsDiv">
+                                <div id="schoolPlace">
+                                    <h3>Koulu</h3>
+                                </div>
+                                <div id="schoolYear">
+                                    <p>2021 - 2023</p>
+                                </div>
+                            </div>
+                            <div id="schoolsDiv">
+                                <div id="schoolPlace">
+                                    <h3>Koulu</h3>
+                                </div>
+                                <div id="schoolYear">
+                                    <p>2021 - 2023</p>
+                                </div>
+                            </div>
+                            <div id="schoolsDiv">
+                                <div id="schoolPlace">
+                                    <h3>Koulu</h3>
+                                </div>
+                                <div id="schoolYear">
+                                    <p>2021 - 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Languages -->
+        <div id="languages">
+            <div id="container">
+                <div id="schoolAndLang">
+                    <div id="languageSkills">
+                        <div id="languageTitle">
+                            <h2>Languages:</h2>
+                        </div>
+                        <div id="languageDiv">
+                            <div id="languageDivTitle">
+                                <h3>Kieli</h3>
+                            </div>
+                            <div id="languageDivContent">
+                                <p>Äidinkieli</p>
+                            </div>
+                        </div>
+                        <div id="languageDiv">
+                            <div id="languageDivTitle">
+                                <h3>Kieli</h3>
+                            </div>
+                            <div id="languageDivContent">
+                                <p>Äidinkieli</p>
+                            </div>
+                        </div>
+                        <div id="languageDiv">
+                            <div id="languageDivTitle">
+                                <h3>Kieli</h3>
+                            </div>
+                            <div id="languageDivContent">
+                                <p>Äidinkieli</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -99,6 +197,7 @@
     * {
         padding: 0;
         margin: 0;
+        scroll-behavior: smooth;
     }
 
     body {
@@ -142,7 +241,40 @@
         padding: 20px;
         background-color: rgba(255, 255, 255, 0.699);
         border-radius: 34px 34px 34px 34px;
-        box-shadow: 0px 0px 8px rgba(10, 255, 2, 0.425);
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    #workExperience {
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    #workTitle {
+        margin-top: 30px;
+        margin-left: 60px;
+        margin-bottom: 30px;
+    }
+
+    #workDiv {
+        width: 45%;
+        height: auto;
+        margin-top: 15px;
+        margin-left: 40px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.699);
+        border-radius: 34px 34px 34px 34px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    #workPlace {
+        margin-bottom: 10px;
+    }
+
+    #schoolAndLang {
+        width: 50%;
+        height: auto;
+        float: left;
     }
 
     #schools{
@@ -151,4 +283,44 @@
         float: left;
     } 
 
+    #schoolsTitle {
+        margin-top: 30px;
+        margin-left: 60px;
+        margin-bottom: 20px;
+    }
+
+    #schoolsContent {
+        width: 45%;
+        height: auto;
+        margin-top: 15px;
+        margin-left: 40px;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.699);
+        border-radius: 34px 34px 34px 34px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    #schoolPlace {
+        margin-top: 10px;
+    }
+
+    #schoolYear {
+        margin-top: 10px;
+    }
+
+    #languageTitle {
+        margin-top: 30px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    #languageDiv {
+        width: 70%;
+        height: auto;
+        margin-top: 15px;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.699);
+        border-radius: 34px 34px 34px 34px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    }
 </style>
