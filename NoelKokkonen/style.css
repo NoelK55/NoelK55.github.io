@@ -5,7 +5,15 @@
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: rgba(252, 222, 103, 0.7);
+    background-color: white;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 #navBar {
@@ -21,20 +29,25 @@ body {
     height: auto;
     float: right;
     text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1900px) {
+    #navBarItem {
+        display: none;
+    }
 }
 
 #aboutMe {
     float: left;
     width: 99%;
     height: auto;
-    background-color: rgba(252, 222, 103, 0.2);
     padding: 0.5%;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
 }
 
 #aboutMePic {
-    width: 45%;
+    width: 42%;
     height: auto;
     float: left;
     text-align: right;
@@ -45,12 +58,12 @@ body {
     height: auto;
     float: left;
     margin-top: 30px;
-    margin-left: 50px;
+    margin-left: 2%;
 }
 
 #name {
     border-bottom: 1px solid black;
-    width: 11%;
+    width: 14%;
 }
 
 #aboutMeTextContent {
@@ -58,29 +71,61 @@ body {
 }
 
 #aboutMeProfileText {
+    font-style: italic;
+}
+
+#aboutMeProfileText {
     margin-top: 10px
 }
 
-#mySkills {
+#projectContent {
+    width: 100%;
+    height: auto;
     float: left;
-    margin-left: 40px;
+    margin-top: 150px;
+}
+
+#projectsTitle {
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid black;
+    width: 5.5%;
+}
+
+#projectItem {
+    width: 30%;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 60px;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 34px 34px 34px 34px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+#mySkills {
+    width: 100%;
+    height: auto;
+    float: left;
     margin-top: 150px;
 }
 
 #skillTitle {
     margin-top: 30px;
-    margin-left: 25px;
+    margin-left: 60px;
+    margin-bottom: 30px;
     border-bottom: 2px solid black;
-    width: 3.5%;
+    width: 4%;
 }
 
 #skillDiv {
-    width: 8.0%;
+    width: 20%;
     height: auto;
-    float: left;
-    margin: 40px 10px;
+    margin-top: 15px;
+    margin-left: 40px;
+    font-size: 20px;
     padding: 20px;
-    background-color: rgba(204, 201, 36, 0.747);
     border-radius: 34px 34px 34px 34px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
 }
@@ -97,7 +142,7 @@ body {
     margin-left: 60px;
     margin-bottom: 30px;
     border-bottom: 2px solid black;
-    width: 10%;
+    width: 7%;
 }
 
 #workDiv {
@@ -105,8 +150,8 @@ body {
     height: auto;
     margin-top: 15px;
     margin-left: 40px;
+    font-size: 20px;
     padding: 20px;
-    background-color:rgba(204, 201, 36, 0.747);
     border-radius: 34px 34px 34px 34px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
 }
@@ -134,7 +179,7 @@ body {
     margin-left: 60px;
     margin-bottom: 20px;
     border-bottom: 2px solid black;
-    width: 10%;
+    width: 11%;
 }
 
 #schoolsContent {
@@ -143,7 +188,6 @@ body {
     margin-top: 15px;
     margin-left: 40px;
     padding: 15px;
-    background-color: rgba(204, 201, 36, 0.747);
     border-radius: 34px 34px 34px 34px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
 }
@@ -166,7 +210,7 @@ body {
     margin-left: 40px;
     margin-bottom: 20px;
     border-bottom: 2px solid black;
-    width: 12%;
+    width: 14%;
 }
 
 #languageDiv {
@@ -174,7 +218,6 @@ body {
     height: auto;
     margin-top: 15px;
     padding: 15px;
-    background-color: rgba(204, 201, 36, 0.747);
     border-radius: 34px 34px 34px 34px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
 }
@@ -185,7 +228,6 @@ body {
     float: left;
     border-top: 2px solid black;
     padding-bottom: 10px;
-    background-color: rgba(204, 201, 36, 0.747);
 }
 
 #informationTitle {
