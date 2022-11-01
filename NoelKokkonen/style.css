@@ -1,0 +1,200 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(252, 222, 103, 0.7);
+}
+
+#navBar {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#navBarItem {
+    width: 4%;
+    height: auto;
+    float: right;
+    text-align: center;
+}
+
+#aboutMe {
+    float: left;
+    width: 99%;
+    height: auto;
+    background-color: rgba(252, 222, 103, 0.2);
+    padding: 0.5%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+#aboutMePic {
+    width: 45%;
+    height: auto;
+    float: left;
+    text-align: right;
+}
+
+#aboutMeText {
+    width: 53%;
+    height: auto;
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+#name {
+    border-bottom: 1px solid white;
+    width: 11%;
+}
+
+#aboutMeTextContent {
+    margin-top: 20px;
+}
+
+#aboutMeProfileText {
+    margin-top: 10px
+}
+
+#mySkills {
+    float: left;
+    margin-left: 40px;
+    margin-top: 150px;
+}
+
+#skillTitle {
+    margin-top: 30px;
+    margin-left: 25px;
+    border-bottom: 2px solid black;
+    width: 3.5%;
+}
+
+#skillDiv {
+    width: 8.0%;
+    height: auto;
+    float: left;
+    margin: 40px 10px;
+    padding: 20px;
+    background-color: rgba(204, 201, 36, 0.747);
+    border-radius: 34px 34px 34px 34px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+#workExperience {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 150px;
+}
+
+#workTitle {
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid black;
+    width: 10%;
+}
+
+#workDiv {
+    width: 45%;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 40px;
+    padding: 20px;
+    background-color:rgba(204, 201, 36, 0.747);
+    border-radius: 34px 34px 34px 34px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+#workPlace {
+    margin-bottom: 10px;
+}
+
+#schoolAndLang {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+#schools{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 150px;
+    margin-bottom: 50px;
+} 
+
+#schoolsTitle {
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    width: 10%;
+}
+
+#schoolsContent {
+    width: 45%;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 40px;
+    padding: 15px;
+    background-color: rgba(204, 201, 36, 0.747);
+    border-radius: 34px 34px 34px 34px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+#schoolPlace {
+    margin-top: 10px;
+}
+
+#schoolYear {
+    margin-top: 10px;
+}
+
+#languageSkills {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+#languageTitle {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    width: 12%;
+}
+
+#languageDiv {
+    width: 70%;
+    height: auto;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgba(204, 201, 36, 0.747);
+    border-radius: 34px 34px 34px 34px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+#information {
+    width: 100%;
+    height: auto;
+    float: left;
+    border-top: 2px solid black;
+    padding-bottom: 10px;
+    background-color: rgba(204, 201, 36, 0.747);
+}
+
+#informationTitle {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+#informationItem {
+    margin-left: 20px;
+}
+
