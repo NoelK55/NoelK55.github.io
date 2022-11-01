@@ -186,6 +186,22 @@
                 </div>
             </div>
         </div>
+        <!-- Contact -->
+        <div id="contact">
+            <div id="container">
+                <div id="information">
+                    <div id="informationTitle">
+                        <h2>Contact:</h2>
+                    </div>
+                    <div id="informationItem">
+                        <p>Email: etunimi.sukunimi@outlook.com</p>
+                    </div>
+                    <div id="informationItem">
+                        <p>Phone number: +5428869212454</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script>
         </script>
@@ -202,6 +218,7 @@
 
     body {
         font-family: 'Montserrat', sans-serif;
+        background-color: rgba(252, 222, 103, 0.7);
     }
 
     #aboutMe {
@@ -210,11 +227,12 @@
         align-items: center;
         margin-top: 40px;
         padding: 40px;
-        background-color: rgba(179, 219, 114, 0.767);
     }
 
     #name {
         margin-bottom: 20px;
+        border-bottom: 2px solid black;
+        width: 30%;
     }
 
     #aboutMeText {
@@ -230,11 +248,14 @@
 
     #mySkills {
         margin-left: 40px;
+        margin-top: 150px;
     }
 
     #skillTitle {
         margin-top: 30px;
         margin-left: 25px;
+        border-bottom: 2px solid black;
+        width: 3.5%;
     }
 
     #skillDiv {
@@ -252,12 +273,15 @@
         width: 100%;
         height: auto;
         float: left;
+        margin-top: 150px;
     }
 
     #workTitle {
         margin-top: 30px;
         margin-left: 60px;
         margin-bottom: 30px;
+        border-bottom: 2px solid black;
+        width: 10%;
     }
 
     #workDiv {
@@ -285,12 +309,16 @@
         width: 100%;
         height: auto;
         float: left;
+        margin-top: 150px;
+        margin-bottom: 50px;
     } 
 
     #schoolsTitle {
         margin-top: 30px;
         margin-left: 60px;
         margin-bottom: 20px;
+        border-bottom: 2px solid black;
+        width: 10%;
     }
 
     #schoolsContent {
@@ -312,10 +340,17 @@
         margin-top: 10px;
     }
 
+    #languageSkills {
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
     #languageTitle {
         margin-top: 30px;
         margin-left: 40px;
         margin-bottom: 20px;
+        border-bottom: 2px solid black;
+        width: 12%;
     }
 
     #languageDiv {
@@ -326,5 +361,23 @@
         background-color: rgba(255, 255, 255, 0.699);
         border-radius: 34px 34px 34px 34px;
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    #information {
+        width: 100%;
+        height: auto;
+        float: left;
+        border-top: 2px solid black;
+        margin-bottom: 10px;
+    }
+
+    #informationTitle {
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+
+    #informationItem {
+        margin-left: 20px;
     }
 </style>
