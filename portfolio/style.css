@@ -1,0 +1,135 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+a {
+    font-size: 1.5rem;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+}
+
+#navBar-title {
+    width: 83%;
+    height: auto;
+    margin: 1vh;
+}
+
+#navBar-link {
+    display: flex;
+    margin: 1.2vh;
+}
+
+#aboutMe {
+    float: left;
+    margin-top: 30vh;
+    margin-left: 10%;
+    margin-right: 50%;
+}
+
+#aboutMeText-Content {
+    margin-top: 0.5vh;
+    font-style: italic;
+}
+
+#skillContent {
+    float: left;
+    margin-top: 30vh;
+    margin-left: 5%;
+}
+
+#skillText {
+    margin-top: 3vh;
+}
+
+#skillText-Div {
+    width: 15%;
+    height: auto;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+#projectsContent {
+    float: left;
+    width: 80%;
+    height: auto;
+    margin-top: 20vh;
+    margin-left: 5%;
+}
+
+#projectText {
+    margin-top: 3vh;
+    margin-left: 2%;
+    padding: 5px;
+    width: 50%;
+}
+
+#projectText-title {
+    text-decoration: underline;
+}
+
+#projectText-Content {
+    margin-top: 0.5vh;
+}
+
+#contactContent {
+    float: left;
+    width: 30%;
+    height: auto;
+    margin-top: 20vh;
+    margin-left: 5%;
+}
+
+#contactText {
+    margin-left: 5%;
+    margin-top: 1vh;
+    margin-bottom: 4vh;
+}
+
+#contactEmail {
+    margin-top: 1vh;
+}
