@@ -49,7 +49,6 @@ p {
 #navBar {
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid white;
 }
 
 #navBar-title {
