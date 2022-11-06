@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/vue@2.4.3/dist/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    </head>
+    <body>
+        <div id="text">
+            <input type="text" placeholder="Example: Star Wars" ref="title">
+            <button @click="GetTitle">Search</button>
+
+            <div>
+                <h2>{{ title }}</h2>
+                <h2>{{ year }}</h2>
+                <p>{{ type }}</p>
+                <h3>{{ director }}</h3>
+                <h4>{{awards == "N/A" ? 'No awards' : awards}}</h4>
+                <p>{{ plot }}</p>
+                <p v-for="(item, index) in ratings" :key="ratings.Source">
+                    {{ item.Source }}: {{item.Value}}
+                </p>
+                <img :src="poster">
+            </div>
+        </div>
+        <script lang="javascript">
+            var vm = new Vue ({
+                el: "#text",
+                data: {
+                    title: null,
+                    awards: null,
+                    director: null,
+                    plot: null,
+                    poster: null,
+                    ratings: null,
+                    year: null,
+                    type: null,
+                },
+                methods: {
+                    GetTitle: async function() {
+                        const writedTitle = this.$refs.title.value;
+                        let response = [];
+                        axios.get(`http://www.omdbapi.com/?t=${writedTitle}&apikey=b22fce98`)
+                        .then((result) => {
+                            response = result.data;
+                            console.log(response);
+                            if(response.Response == "False")
+                            {
+                                this.title = "Sorry, couldn't find any movie or serie with this title."
+                            }
+                            else {
+                                this.title = response.Title;
+                                this.director = response.Director;
+                                this.year = response.Year;
+                                this.ratings = response.Ratings;
+                                this.plot = response.Plot;
+                                this.awards = response.Awards;
+                                this.poster = response.Poster;
+                                this.type = response.Type;
+                            }
+                        })
+                    },
+                },
+            });
+        </script>
+    </body>
+</html>
