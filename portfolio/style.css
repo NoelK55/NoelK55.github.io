@@ -46,6 +46,10 @@ p {
     font-size: 1.25rem;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 #navBar {
     display: flex;
     justify-content: space-between;
