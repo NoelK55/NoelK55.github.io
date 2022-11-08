@@ -4,21 +4,230 @@
         <script src="https://unpkg.com/vue@2.4.3/dist/vue.js"></script>
     </head>
     <body>
-        <div id="cardInformation">
-            <div>
-                <input type="text" v-model="name">
+        <div id="CheckOut">
+            <div id="CardInformation">
+                <div id="drawCard-Div">
+                    <div id="card">
+                        <div id="card-chip">
+                            <img src="cardchip.png" style="width: 6vh; height: auto;">
+                        </div>
+                        <div id="card-number">
+                            <h2>{{writedNumbers == '' ? "#### #### #### ####" : writedNumbers}}</h4>
+                        </div>
+                        <div id="card-expDate">
+                            <h5>Month/Year</h5>
+                            <h4>{{expMonth == '' ? "Month" : expMonth}} / {{expYear == '' ? "Year" : expYear}}</h4>
+                        </div>
+                        <div id="card-holder">
+                            <h5>Card holder:</h5>
+                            <h4>{{cardHolder == '' ? "Your Name" : cardHolder}}</h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-inputs">
+                    <h4 id="insert-Title">Experience date:</h4>
+                    <div id="insert-card-number">
+                        <input type="text" placeholder="Card number" v-model="writedNumbers" @input="AddSpaces" maxlength="19">
+                    </div>
+                    <h4 id="insert-Title">Experience date:</h4>
+                    <div id="insert-card-holder">
+                        <input type="text" placeholder="Your Name" v-model="cardHolder">
+                    </div>
+                    <h4 id="insert-Title">Experience date:</h4>
+                    <div id=insert-card-expDate>
+                        <div id="expDate-month">
+                            <input type="number" placeholder="month" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2" v-model="expMonth">
+                        </div>
+                        <div id="expDate-Year">
+                            <input type="number" placeholder="year" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2" v-model="expYear">
+                        </div>
+                    </div>
+                </div>
+                <div id="payButton">
+                    <button id="payBT" @click="Timer"><h4>{{ show == false ? buttonText : "Success!!!"}}</h4></button>
+                </div>
             </div>
         </div>
         <script lang="javascript">
             var vm = new Vue({
-                el: "#cardInformation",
+                el: "#CheckOut",
                 data: {
-                    name: null,
+                    writedNumbers: '',
+                    cardHolder: '',
+                    expMonth: '',
+                    expYear: '',
+                    buttonText: "Pay",
+                    show: false,
+                },
+                methods: {
+                    AddSpaces(e) { // .replace(/\s/g, '') = Remove previous value spaces || .replace(/(.{4})/g, '$1 ') Adds space after every forth digit || .trim() remotes space after last set of 4 digits 
+                        this.writedNumbers = e.target.value.replace(/\s/g, '').replace(/(.{4})/g, '$1 ').trim();
+                    },
+
+                    Timer() {
+                        if(this.writedNumbers != '' && this.cardHolder != '' && this.expMonth != '' && this.expYear != '')
+                        {
+                            this.show = true;
+                            setTimeout(() => {
+                                this.writedNumbers = '';
+                                this.cardHolder = '';
+                                this.expMonth = '';
+                                this.expYear = '';
+                                this.show = false
+                            }, 5000);
+                        } 
+                        else
+                        {
+                            this.buttonText = "Fill every slot";
+                            setTimeout(() => {
+                                this.buttonText = "Pay";
+                            }, 2000);
+                        } 
+                    }                    
                 },
             });
         </script>
 
         <style>
+            * {
+                padding: 0%;
+                margin: 0%;
+            }
+
+            h2 {
+                font-size: 2vh;
+            }
+
+            h4 {
+                font-size: 1vh;
+            }
+
+            h5 {
+                font-size: 0.8vh;
+            }
+
+            input {
+                border: none;
+                -moz-appearance: none;
+                padding: 3%;
+                border-radius: 20px 20px 20px 20px;
+            }
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+
+            #CardInformation {
+                float: left;
+                width: 50vh;
+                height: 60vh;
+                margin-left: 5%;
+                margin-top: 5%;
+                margin-right: 5%;
+                max-width: fit-content;
+                padding: 2%;
+                box-shadow: 0px 0px 8px hsla(0, 0%, 0%, 0.25);
+                border-radius: 16px 16px 16px 16px;
+            }
+
+            #drawCard-Div {
+                float: left;
+                width: 100%;
+                height: auto;
+            }
+
+            #card {
+                float: left;
+                width: 35vh;
+                height: 20vh;
+                border-radius: 20px 20px 20px 20px;
+                margin-right: 5%;
+                color: rgba(245, 245, 245, 0.795);
+                background-image: url("cardbg.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            #card-chip {
+                margin: 1vh
+            }
+
+            #card-number {
+                float: left;
+                width: 60%;
+                height: auto;
+                margin-left: 4vh;
+                margin-top: 1vh;
+            }
+
+            #card-expDate {
+                float: left;
+                width: 30%;
+                height: auto;
+                margin-top: 3vh;
+                margin-left: 25vh;
+            }
+
+            #card-holder {
+                float: left;
+                width: 70%;
+                height: auto;
+                margin-top: 0.4vh;
+                margin-left: 4vh;
+            }
+
+            #card-inputs {
+                float: left;
+                width: 60%;
+                height: auto;
+            }
+
+            #insert-Title {
+                margin-top: 10%;
+            }
+
+            #insert-card-number {
+                margin-top: 0.5vh;
+            }
+
+            #insert-card-holder {
+                margin-top: 0.5vh;
+            }
+
+            #insert-card-expDate {
+                float: left;
+                margin-top: 0.3vh;
+                width: 100%;
+                height: auto;
+            }
+
+            #expDate-month {
+                margin-bottom: 1%;
+            }
+
+            #payButton {
+                float: left;
+                width: 100%;
+                height: auto;
+                margin-top: 5vh;
+                text-align: center;
+            }
+
+            #payBT {
+                width: 8vh;
+                height: 8vh;
+                background-color: rgba(211, 211, 211, 0.452);
+                border: none;
+                border-radius: 50%;
+            }
+
+            #payBT:hover {
+                color: black!important;
+                background-color: white!important;
+                box-shadow: 0px 0px 8px rgba(0, 128, 0, 0.685)!important;
+            }
+
         </style>
     </body>
 </html>
