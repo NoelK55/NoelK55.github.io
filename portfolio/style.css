@@ -109,17 +109,19 @@ p {
 
 #projectText-title {
     text-decoration: underline;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
 }
 
 #projectText-Content {
-    margin-top: 0.5vh;
+    margin-bottom: 5vh;
 }
 
 #contactContent {
     float: left;
     width: 30%;
     height: auto;
-    margin-top: 20vh;
+    margin-top: 15vh;
     margin-left: 5%;
 }
 

@@ -25,15 +25,15 @@
                     </div>
                 </div>
                 <div id="card-inputs">
-                    <h4 id="insert-Title">Experience date:</h4>
+                    <h4 id="input-Title">Card number:</h4>
                     <div id="insert-card-number">
                         <input type="text" placeholder="Card number" v-model="writedNumbers" @input="AddSpaces" maxlength="19">
                     </div>
-                    <h4 id="insert-Title">Experience date:</h4>
+                    <h4 id="input-Title">Name:</h4>
                     <div id="insert-card-holder">
                         <input type="text" placeholder="Your Name" v-model="cardHolder">
                     </div>
-                    <h4 id="insert-Title">Experience date:</h4>
+                    <h4 id="input-Title">Expiry date:</h4>
                     <div id=insert-card-expDate>
                         <div id="expDate-month">
                             <input type="number" placeholder="month" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2" v-model="expMonth">
@@ -183,7 +183,7 @@
                 height: auto;
             }
 
-            #insert-Title {
+            #input-Title {
                 margin-top: 10%;
             }
 
