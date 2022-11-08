@@ -15,6 +15,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    -ms-overflow-style:none;
 }
 a {
     font-size: 1.5rem;
@@ -49,6 +50,10 @@ p {
 ::-webkit-scrollbar {
     display: none;
 }
+
+::-webkit-scrollbar-button {
+    display: none;
+  }
 
 #navBar {
     display: flex;
