@@ -60,7 +60,7 @@
                     show: false,
                 },
                 methods: {
-                    AddSpaces(e) { // .replace(/\s/g, '') = Remove previous value spaces || .replace(/(.{4})/g, '$1 ') Adds space after every forth digit || .trim() remotes space after last set of 4 digits 
+                    AddSpaces(e) { // .replace(/\s/g, '') = Remove previous value spaces || .replace(/(.{4})/g, '$1 ') Adds space after every fourth digit || .trim() Removes space after last set of 4 digits  
                         this.writedNumbers = e.target.value.replace(/\s/g, '').replace(/(.{4})/g, '$1 ').trim();
                     },
 
